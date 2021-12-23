@@ -15,6 +15,8 @@
 		22A5FBD02774ADEC00FA3779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A5FBCE2774ADEC00FA3779 /* LaunchScreen.storyboard */; };
 		22A5FBDB2774ADEC00FA3779 /* Dog_CEO_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FBDA2774ADEC00FA3779 /* Dog_CEO_ChallengeTests.swift */; };
 		22A5FBE62774ADEC00FA3779 /* Dog_CEO_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FBE52774ADEC00FA3779 /* Dog_CEO_ChallengeUITests.swift */; };
+		22A5FBFB2774B8F600FA3779 /* DogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FBFA2774B8F600FA3779 /* DogListViewController.swift */; };
+		22A5FBFD2774B94E00FA3779 /* DogListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22A5FBFC2774B94E00FA3779 /* DogListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		22A5FBE12774ADEC00FA3779 /* Dog-CEO_ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dog-CEO_ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A5FBE52774ADEC00FA3779 /* Dog_CEO_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog_CEO_ChallengeUITests.swift; sourceTree = "<group>"; };
 		22A5FBE72774ADEC00FA3779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A5FBFA2774B8F600FA3779 /* DogListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListViewController.swift; sourceTree = "<group>"; };
+		22A5FBFC2774B94E00FA3779 /* DogListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,8 @@
 		22A5FBC22774ADEA00FA3779 /* Dog-CEO_Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				22A5FBC32774ADEA00FA3779 /* AppDelegate.swift */,
-				22A5FBC52774ADEA00FA3779 /* SceneDelegate.swift */,
+				22A5FBF42774B47E00FA3779 /* Main */,
+				22A5FBF32774B46100FA3779 /* Base */,
 				22A5FBC72774ADEA00FA3779 /* ViewController.swift */,
 				22A5FBC92774ADEA00FA3779 /* Main.storyboard */,
 				22A5FBCC2774ADEC00FA3779 /* Assets.xcassets */,
@@ -126,6 +130,32 @@
 				22A5FBE72774ADEC00FA3779 /* Info.plist */,
 			);
 			path = "Dog-CEO_ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		22A5FBF32774B46100FA3779 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				22A5FBC52774ADEA00FA3779 /* SceneDelegate.swift */,
+				22A5FBC32774ADEA00FA3779 /* AppDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		22A5FBF42774B47E00FA3779 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				22A5FBF92774B8E200FA3779 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		22A5FBF92774B8E200FA3779 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22A5FBFA2774B8F600FA3779 /* DogListViewController.swift */,
+				22A5FBFC2774B94E00FA3779 /* DogListViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +264,7 @@
 				22A5FBD02774ADEC00FA3779 /* LaunchScreen.storyboard in Resources */,
 				22A5FBCD2774ADEC00FA3779 /* Assets.xcassets in Resources */,
 				22A5FBCB2774ADEA00FA3779 /* Main.storyboard in Resources */,
+				22A5FBFD2774B94E00FA3779 /* DogListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +292,7 @@
 				22A5FBC82774ADEA00FA3779 /* ViewController.swift in Sources */,
 				22A5FBC42774ADEA00FA3779 /* AppDelegate.swift in Sources */,
 				22A5FBC62774ADEA00FA3779 /* SceneDelegate.swift in Sources */,
+				22A5FBFB2774B8F600FA3779 /* DogListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +477,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.goto.Dog-CEO-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -463,7 +495,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.goto.Dog-CEO-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
