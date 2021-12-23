@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DogListViewController" customModule="Dog_CEO_Challenge" customModuleProvider="target">
             <connections>
+                <outlet property="titleLeading" destination="FGF-Rn-wdG" id="6aQ-0K-VVg"/>
+                <outlet property="titleTop" destination="wnt-Ws-A6b" id="byX-Z6-nil"/>
+                <outlet property="titleTrailing" destination="2Hj-cb-mHS" id="xbG-ZB-vai"/>
                 <outlet property="view" destination="iN0-l3-epB" id="buD-ry-C2Y"/>
             </connections>
         </placeholder>
@@ -18,20 +21,29 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DogListViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oh2-kH-wjx">
-                    <rect key="frame" x="121.5" y="442.5" width="171" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DogListViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oh2-kH-wjx">
+                    <rect key="frame" x="30" y="74" width="354" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2QA-eo-iiA">
+                    <rect key="frame" x="20" y="140" width="374" height="722"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="Oh2-kH-wjx" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="H7E-Xd-xyk"/>
-                <constraint firstItem="Oh2-kH-wjx" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Nh7-FY-gnK"/>
+                <constraint firstItem="2QA-eo-iiA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="1vb-Z1-DW7"/>
+                <constraint firstItem="2QA-eo-iiA" firstAttribute="top" secondItem="Oh2-kH-wjx" secondAttribute="bottom" constant="45" id="28S-wF-dA7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Oh2-kH-wjx" secondAttribute="trailing" constant="30" id="2Hj-cb-mHS"/>
+                <constraint firstItem="Oh2-kH-wjx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="FGF-Rn-wdG"/>
+                <constraint firstItem="2QA-eo-iiA" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="e3Q-Sh-zPV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2QA-eo-iiA" secondAttribute="trailing" constant="20" id="u9z-II-8oH"/>
+                <constraint firstItem="Oh2-kH-wjx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="wnt-Ws-A6b"/>
             </constraints>
-            <point key="canvasLocation" x="55" y="73"/>
+            <point key="canvasLocation" x="53.623188405797109" y="72.991071428571431"/>
         </view>
     </objects>
     <resources>
