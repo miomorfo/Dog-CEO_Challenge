@@ -21,14 +21,14 @@ class DogListViewController: UIViewController {
     }
     
     @IBOutlet weak var tableView: UITableView!
-    
-    var datos = [DogModel]()
+
     var viewModel = DogListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCell()
         bindData()
+        viewModel.fetchData()
 
     }
 }

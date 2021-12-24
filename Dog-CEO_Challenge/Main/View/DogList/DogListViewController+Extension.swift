@@ -11,15 +11,12 @@ extension DogListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! DogListTableViewCell
 //        let object = viewModel.arrayData[indexPath.row]
         cell.title.text = "title"
-   
-
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 30
         print("cantidad items \(viewModel.arrayData.count)")
-        return viewModel.arrayData.count
+        return viewModel.arrayData.count 
     }
 
 }

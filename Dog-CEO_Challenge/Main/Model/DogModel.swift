@@ -1,6 +1,6 @@
 import Foundation
 
 struct DogModel: Codable {
-    let message : [String: [String]]
-    let status  : String
+    let message: [String]?
+    let status: String?
 }

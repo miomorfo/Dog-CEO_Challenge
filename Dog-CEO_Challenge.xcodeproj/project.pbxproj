@@ -98,12 +98,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2297B7FA2774FF73003529DC /* Nentwork */ = {
+		2297B7FA2774FF73003529DC /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				2297B7FE27750241003529DC /* ExternalService.swift */,
 			);
-			path = Nentwork;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		2297B8002775064D003529DC /* ViewModel */ = {
@@ -137,7 +137,7 @@
 		22A5FBC22774ADEA00FA3779 /* Dog-CEO_Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				2297B7FA2774FF73003529DC /* Nentwork */,
+				2297B7FA2774FF73003529DC /* Network */,
 				22A5FBFE2774CD2100FA3779 /* Constants */,
 				22A5FBF42774B47E00FA3779 /* Main */,
 				22A5FBF32774B46100FA3779 /* Base */,

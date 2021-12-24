@@ -2,28 +2,21 @@ class DogListViewModel {
     
     let network: ServiceDataSource
     
-    init(serviceDS: ServiceDataSource) {
+    init(serviceDS: ServiceDataSource = ExternalService()) {
         self.network = serviceDS
-        fetchData()
-    }
-    
-    init() {
-        network = ExternalService()
-        fetchData()
     }
     
     var reloadData = { () -> () in }
     
-    
-    var arrayData: [DogModel] = [] {
+    var arrayData: [String] = [] {
         didSet {
             reloadData()
         }
     }
     
-    private func fetchData() {
+    func fetchData() {
         network.getData { dogs in
-            self.arrayData = dogs
+            self.arrayData = dogs.message ?? []
         }
     }
 }
