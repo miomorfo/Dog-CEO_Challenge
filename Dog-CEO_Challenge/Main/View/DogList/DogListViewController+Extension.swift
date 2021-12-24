@@ -9,8 +9,8 @@ extension DogListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        return UITableViewCell()
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! DogListTableViewCell
-//        let object = viewModel.arrayData[indexPath.row]
-        cell.title.text = "title"
+        let object = viewModel.arrayData[indexPath.row]
+        cell.title.text = object
         return cell
     }
     

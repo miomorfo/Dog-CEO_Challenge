@@ -15,17 +15,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukd-G4-wHt">
-                        <rect key="frame" x="30" y="12" width="117" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukd-G4-wHt">
+                        <rect key="frame" x="20" y="12" width="382" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ukd-G4-wHt" secondAttribute="trailing" constant="12" id="6Qy-7w-cB6"/>
+                    <constraint firstItem="ukd-G4-wHt" firstAttribute="top" secondItem="82c-cD-Z0J" secondAttribute="top" constant="12" id="BmE-xP-nD9"/>
+                    <constraint firstAttribute="bottom" secondItem="ukd-G4-wHt" secondAttribute="bottom" constant="11" id="trY-fU-bN9"/>
+                    <constraint firstItem="ukd-G4-wHt" firstAttribute="leading" secondItem="82c-cD-Z0J" secondAttribute="leading" constant="20" symbolic="YES" id="vfS-DS-W7R"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="bottom" destination="trY-fU-bN9" id="Bej-L2-W3z"/>
+                <outlet property="leading" destination="vfS-DS-W7R" id="cid-Uq-jjk"/>
                 <outlet property="title" destination="ukd-G4-wHt" id="s8g-Z7-gtt"/>
+                <outlet property="top" destination="BmE-xP-nD9" id="bSL-uq-cc1"/>
+                <outlet property="trailing" destination="6Qy-7w-cB6" id="SJj-xz-vOM"/>
             </connections>
             <point key="canvasLocation" x="327.536231884058" y="-15.401785714285714"/>
         </tableViewCell>
