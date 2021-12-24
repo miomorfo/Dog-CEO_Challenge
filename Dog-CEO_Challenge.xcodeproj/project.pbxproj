@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2297B7FD27750220003529DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2297B7FC27750220003529DC /* Alamofire */; };
+		2297B7FF27750241003529DC /* ExternalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297B7FE27750241003529DC /* ExternalService.swift */; };
+		2297B80227750670003529DC /* DogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297B80127750670003529DC /* DogListViewModel.swift */; };
 		22A5FBC42774ADEA00FA3779 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FBC32774ADEA00FA3779 /* AppDelegate.swift */; };
 		22A5FBC62774ADEA00FA3779 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FBC52774ADEA00FA3779 /* SceneDelegate.swift */; };
 		22A5FBC82774ADEA00FA3779 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FBC72774ADEA00FA3779 /* ViewController.swift */; };
@@ -21,6 +24,8 @@
 		22A5FC032774D22E00FA3779 /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FC022774D22E00FA3779 /* DogModel.swift */; };
 		22A5FC052774D7A700FA3779 /* DogListViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FC042774D7A700FA3779 /* DogListViewController+Extension.swift */; };
 		22A5FC082774D92F00FA3779 /* DogListViewControllerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FC072774D92F00FA3779 /* DogListViewControllerConstants.swift */; };
+		22A5FC0C2774DDB300FA3779 /* DogListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22A5FC0B2774DDB300FA3779 /* DogListTableViewCell.xib */; };
+		22A5FC0E2774DE4E00FA3779 /* DogListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FC0D2774DE4E00FA3779 /* DogListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2297B7FE27750241003529DC /* ExternalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalService.swift; sourceTree = "<group>"; };
+		2297B80127750670003529DC /* DogListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListViewModel.swift; sourceTree = "<group>"; };
 		22A5FBC02774ADEA00FA3779 /* Dog-CEO_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog-CEO_Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A5FBC32774ADEA00FA3779 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22A5FBC52774ADEA00FA3779 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +68,8 @@
 		22A5FC022774D22E00FA3779 /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
 		22A5FC042774D7A700FA3779 /* DogListViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogListViewController+Extension.swift"; sourceTree = "<group>"; };
 		22A5FC072774D92F00FA3779 /* DogListViewControllerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListViewControllerConstants.swift; sourceTree = "<group>"; };
+		22A5FC0B2774DDB300FA3779 /* DogListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogListTableViewCell.xib; sourceTree = "<group>"; };
+		22A5FC0D2774DE4E00FA3779 /* DogListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2297B7FD27750220003529DC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +98,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2297B7FA2774FF73003529DC /* Nentwork */ = {
+			isa = PBXGroup;
+			children = (
+				2297B7FE27750241003529DC /* ExternalService.swift */,
+			);
+			path = Nentwork;
+			sourceTree = "<group>";
+		};
+		2297B8002775064D003529DC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2297B80127750670003529DC /* DogListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		22A5FBB72774ADEA00FA3779 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +137,7 @@
 		22A5FBC22774ADEA00FA3779 /* Dog-CEO_Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				2297B7FA2774FF73003529DC /* Nentwork */,
 				22A5FBFE2774CD2100FA3779 /* Constants */,
 				22A5FBF42774B47E00FA3779 /* Main */,
 				22A5FBF32774B46100FA3779 /* Base */,
@@ -153,6 +180,7 @@
 		22A5FBF42774B47E00FA3779 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2297B8002775064D003529DC /* ViewModel */,
 				22A5FC012774D19700FA3779 /* Model */,
 				22A5FBF92774B8E200FA3779 /* View */,
 			);
@@ -162,10 +190,7 @@
 		22A5FBF92774B8E200FA3779 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				22A5FC062774D91E00FA3779 /* Constants */,
-				22A5FBFA2774B8F600FA3779 /* DogListViewController.swift */,
-				22A5FBFC2774B94E00FA3779 /* DogListViewController.xib */,
-				22A5FC042774D7A700FA3779 /* DogListViewController+Extension.swift */,
+				22A5FC092774DC9100FA3779 /* DogList */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +219,27 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		22A5FC092774DC9100FA3779 /* DogList */ = {
+			isa = PBXGroup;
+			children = (
+				22A5FC0A2774DCB400FA3779 /* Cell */,
+				22A5FBFA2774B8F600FA3779 /* DogListViewController.swift */,
+				22A5FBFC2774B94E00FA3779 /* DogListViewController.xib */,
+				22A5FC042774D7A700FA3779 /* DogListViewController+Extension.swift */,
+				22A5FC062774D91E00FA3779 /* Constants */,
+			);
+			path = DogList;
+			sourceTree = "<group>";
+		};
+		22A5FC0A2774DCB400FA3779 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				22A5FC0B2774DDB300FA3779 /* DogListTableViewCell.xib */,
+				22A5FC0D2774DE4E00FA3779 /* DogListTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,6 +256,9 @@
 			dependencies = (
 			);
 			name = "Dog-CEO_Challenge";
+			packageProductDependencies = (
+				2297B7FC27750220003529DC /* Alamofire */,
+			);
 			productName = "Dog-CEO_Challenge";
 			productReference = 22A5FBC02774ADEA00FA3779 /* Dog-CEO_Challenge.app */;
 			productType = "com.apple.product-type.application";
@@ -281,6 +330,9 @@
 				Base,
 			);
 			mainGroup = 22A5FBB72774ADEA00FA3779;
+			packageReferences = (
+				2297B7FB27750220003529DC /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 22A5FBC12774ADEA00FA3779 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -300,6 +352,7 @@
 				22A5FBD02774ADEC00FA3779 /* LaunchScreen.storyboard in Resources */,
 				22A5FBCD2774ADEC00FA3779 /* Assets.xcassets in Resources */,
 				22A5FBCB2774ADEA00FA3779 /* Main.storyboard in Resources */,
+				22A5FC0C2774DDB300FA3779 /* DogListTableViewCell.xib in Resources */,
 				22A5FBFD2774B94E00FA3779 /* DogListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,10 +378,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2297B7FF27750241003529DC /* ExternalService.swift in Sources */,
+				2297B80227750670003529DC /* DogListViewModel.swift in Sources */,
 				22A5FBC82774ADEA00FA3779 /* ViewController.swift in Sources */,
 				22A5FC082774D92F00FA3779 /* DogListViewControllerConstants.swift in Sources */,
 				22A5FBC42774ADEA00FA3779 /* AppDelegate.swift in Sources */,
 				22A5FC052774D7A700FA3779 /* DogListViewController+Extension.swift in Sources */,
+				22A5FC0E2774DE4E00FA3779 /* DogListTableViewCell.swift in Sources */,
 				22A5FBC62774ADEA00FA3779 /* SceneDelegate.swift in Sources */,
 				22A5FBFB2774B8F600FA3779 /* DogListViewController.swift in Sources */,
 				22A5FC032774D22E00FA3779 /* DogModel.swift in Sources */,
@@ -510,6 +566,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Dog-CEO_Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -528,6 +585,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Dog-CEO_Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -659,6 +717,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2297B7FB27750220003529DC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2297B7FC27750220003529DC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2297B7FB27750220003529DC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 22A5FBB82774ADEA00FA3779 /* Project object */;
 }

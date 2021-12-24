@@ -2,26 +2,33 @@ import UIKit
 
 class DogListViewController: UIViewController {
     
-    @IBOutlet weak var titleTop: NSLayoutConstraint! {
+    @IBOutlet private weak var titleTop: NSLayoutConstraint! {
         didSet {
             titleTop.constant = DogListView.titleTop
         }
     }
     
-    @IBOutlet weak var titleTrailing: NSLayoutConstraint! {
+    @IBOutlet private weak var titleTrailing: NSLayoutConstraint! {
         didSet {
             titleTrailing.constant = DogListView.titleTrailing
         }
     }
     
-    @IBOutlet weak var titleLeading: NSLayoutConstraint! {
+    @IBOutlet private weak var titleLeading: NSLayoutConstraint! {
         didSet {
             titleLeading.constant = DogListView.titleLeading
         }
     }
     
+    @IBOutlet weak var tableView: UITableView!
+    
+    var datos = [DogModel]()
+    var viewModel = DogListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        registerCell()
+        bindData()
+
     }
 }

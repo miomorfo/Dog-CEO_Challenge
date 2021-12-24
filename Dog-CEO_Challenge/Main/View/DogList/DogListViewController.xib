@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DogListViewController" customModule="Dog_CEO_Challenge" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="2QA-eo-iiA" id="FeP-Xe-MfS"/>
                 <outlet property="titleLeading" destination="FGF-Rn-wdG" id="6aQ-0K-VVg"/>
                 <outlet property="titleTop" destination="wnt-Ws-A6b" id="byX-Z6-nil"/>
                 <outlet property="titleTrailing" destination="2Hj-cb-mHS" id="xbG-ZB-vai"/>
