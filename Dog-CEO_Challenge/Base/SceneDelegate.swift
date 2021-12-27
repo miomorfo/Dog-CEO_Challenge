@@ -12,6 +12,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         let dogListViewController = DogListViewController()
         window?.rootViewController = dogListViewController
+//        let detailview = DetailViewController()
+//        window?.rootViewController = detailview
+
         window?.makeKeyAndVisible()
 
 //        guard let _ = (scene as? UIWindowScene) else { return }

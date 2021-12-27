@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F1D7DF62777B7FF0080E90E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D7DF52777B7FF0080E90E /* DetailViewController.swift */; };
+		0F1D7DF82777B8290080E90E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F1D7DF72777B8290080E90E /* DetailViewController.xib */; };
+		0F1D7DFD277966080080E90E /* DetailViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D7DFC277966080080E90E /* DetailViewConstants.swift */; };
 		2297B7FD27750220003529DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2297B7FC27750220003529DC /* Alamofire */; };
 		2297B7FF27750241003529DC /* ExternalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297B7FE27750241003529DC /* ExternalService.swift */; };
 		2297B80227750670003529DC /* DogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297B80127750670003529DC /* DogListViewModel.swift */; };
@@ -46,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F1D7DF52777B7FF0080E90E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0F1D7DF72777B8290080E90E /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		0F1D7DFC277966080080E90E /* DetailViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewConstants.swift; sourceTree = "<group>"; };
 		2297B7FE27750241003529DC /* ExternalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalService.swift; sourceTree = "<group>"; };
 		2297B80127750670003529DC /* DogListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListViewModel.swift; sourceTree = "<group>"; };
 		22A5FBC02774ADEA00FA3779 /* Dog-CEO_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog-CEO_Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +104,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F1D7DF42777B7DF0080E90E /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				0F1D7DF9277965D80080E90E /* Constants */,
+				0F1D7DF52777B7FF0080E90E /* DetailViewController.swift */,
+				0F1D7DF72777B8290080E90E /* DetailViewController.xib */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		0F1D7DF9277965D80080E90E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0F1D7DFC277966080080E90E /* DetailViewConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		2297B7FA2774FF73003529DC /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +164,7 @@
 				2297B7FA2774FF73003529DC /* Network */,
 				22A5FBFE2774CD2100FA3779 /* Constants */,
 				22A5FBF42774B47E00FA3779 /* Main */,
+				0F1D7DF42777B7DF0080E90E /* DetailView */,
 				22A5FBF32774B46100FA3779 /* Base */,
 				22A5FBC72774ADEA00FA3779 /* ViewController.swift */,
 				22A5FBC92774ADEA00FA3779 /* Main.storyboard */,
@@ -350,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22A5FBD02774ADEC00FA3779 /* LaunchScreen.storyboard in Resources */,
+				0F1D7DF82777B8290080E90E /* DetailViewController.xib in Resources */,
 				22A5FBCD2774ADEC00FA3779 /* Assets.xcassets in Resources */,
 				22A5FBCB2774ADEA00FA3779 /* Main.storyboard in Resources */,
 				22A5FC0C2774DDB300FA3779 /* DogListTableViewCell.xib in Resources */,
@@ -381,9 +407,11 @@
 				2297B7FF27750241003529DC /* ExternalService.swift in Sources */,
 				2297B80227750670003529DC /* DogListViewModel.swift in Sources */,
 				22A5FBC82774ADEA00FA3779 /* ViewController.swift in Sources */,
+				0F1D7DF62777B7FF0080E90E /* DetailViewController.swift in Sources */,
 				22A5FC082774D92F00FA3779 /* DogListViewControllerConstants.swift in Sources */,
 				22A5FBC42774ADEA00FA3779 /* AppDelegate.swift in Sources */,
 				22A5FC052774D7A700FA3779 /* DogListViewController+Extension.swift in Sources */,
+				0F1D7DFD277966080080E90E /* DetailViewConstants.swift in Sources */,
 				22A5FC0E2774DE4E00FA3779 /* DogListTableViewCell.swift in Sources */,
 				22A5FBC62774ADEA00FA3779 /* SceneDelegate.swift in Sources */,
 				22A5FBFB2774B8F600FA3779 /* DogListViewController.swift in Sources */,

@@ -29,6 +29,5 @@ class DogListViewController: UIViewController {
         registerCell()
         bindData()
         viewModel.fetchData()
-
     }
 }
