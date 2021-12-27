@@ -23,16 +23,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D2CF4A78-77FD-489E-85F6-93D5A6F46D90"
+            uuid = "B8F2EE13-42FA-4983-AF65-63E238F93757"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Dog-CEO_Challenge/Detail/View/DetailViewController+Extension.swift"
+            filePath = "Dog-CEO_Challenge/Utils/UIImageView+Extension.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "load(url:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B4266C3-8E4E-4D42-9CD0-E4125D3F0687"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Dog-CEO_ChallengeTests/DogList/ViewModel/DogListViewModelTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "test_when_response_is_success_most_be_not_null()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

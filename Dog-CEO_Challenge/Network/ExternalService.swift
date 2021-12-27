@@ -6,7 +6,7 @@ protocol ServiceDataSource {
     func getDetail(name: String, completion: @escaping(DogModel) -> ())
 }
 
-class ExternalService: ServiceDataSource {
+struct ExternalService: ServiceDataSource {
     
     func getData(completion: @escaping (DogModel) -> ()) {
         let url  = Enpoints.urlBase + Enpoints.enpoints.list
@@ -32,8 +32,8 @@ class ExternalService: ServiceDataSource {
     }
     
     func getDetail(name: String, completion: @escaping (DogModel) ->()) {
-        let replaced = Enpoints.enpoints.detail.replacingOccurrences(of: "{name}", with: name)
-        let url = Enpoints.urlBase + replaced
+        let replacedEnpoint = Enpoints.enpoints.detail.replacingOccurrences(of: "{name}", with: name)
+        let url = Enpoints.urlBase + replacedEnpoint
         Alamofire.request(url).responseJSON { response in
             if let statusCode = response.response?.statusCode {
                 if statusCode == 200 {

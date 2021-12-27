@@ -20,9 +20,10 @@ extension DetailViewController: UITableViewDataSource {
         #if DEBUG
         print("cantidad imagenes del perro \(viewModel.arrayData.count)")
         #endif
-        
         return viewModel.arrayData.count
     }
+    
+
     
 }
 
@@ -35,10 +36,10 @@ extension DetailViewController {
     
     func bindData() {
         viewModel.reloadData = { [weak self] () in
-            DispatchQueue.main.async {
+//            DispatchQueue.main.async {
                 self?.tableView.reloadData()
                 //
-            }
+//            }
         }
     }
 }

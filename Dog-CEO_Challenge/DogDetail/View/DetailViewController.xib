@@ -19,14 +19,19 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q3F-4B-G1t">
-                    <rect key="frame" x="20" y="93" width="374" height="769"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q3F-4B-G1t">
+                    <rect key="frame" x="0.0" y="54" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="q3F-4B-G1t" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GCa-Mr-e2d"/>
+                <constraint firstItem="q3F-4B-G1t" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="cvJ-Ok-Cj2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="q3F-4B-G1t" secondAttribute="trailing" id="d0X-tE-ys9"/>
+                <constraint firstItem="q3F-4B-G1t" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="10" id="tLY-k8-H2E"/>
+            </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
         </view>
     </objects>

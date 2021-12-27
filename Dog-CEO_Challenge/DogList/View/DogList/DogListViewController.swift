@@ -2,6 +2,7 @@ import UIKit
 
 class DogListViewController: UIViewController {
     
+    @IBOutlet weak var activity: UIActivityIndicatorView!
     @IBOutlet private weak var titleTop: NSLayoutConstraint! {
         didSet {
             titleTop.constant = DogListView.titleTop

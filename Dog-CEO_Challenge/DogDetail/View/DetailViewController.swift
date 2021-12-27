@@ -19,7 +19,6 @@ class DetailViewController: UIViewController {
         if titleDogString.isEmpty {
             title = DetailViewConstans.unavailableTitle
         } else {
-
             title = titleDogString
         }
     }
