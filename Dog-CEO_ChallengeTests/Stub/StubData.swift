@@ -2,17 +2,8 @@
 
 
 class StubData: ServiceDataSource {
-
-    //FIX: delete this init
-    var dogsData: DogModel = DogModel(message: [
-                                        "affenpinscher",
-                                        "african",
-                                        "airedale",
-                                        "akita",
-                                        "appenzeller",
-                                        "australian",
-                                        "basenji"],
-                             status: "success")
+    
+    var dogsData: DogModel!
     
     func getData(completion: @escaping (DogModel) -> ()) {
         completion(dogsData)

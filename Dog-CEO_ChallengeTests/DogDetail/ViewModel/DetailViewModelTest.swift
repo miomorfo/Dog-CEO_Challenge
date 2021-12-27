@@ -32,7 +32,8 @@ class DetailViewModelTest: XCTestCase {
                                                 "https://images.dog.ceo/breeds/perro/n02088094_10832.jpg"],
                                      status: "success")
         sut = DetailViewModel(serviceDS: dataStub)
-        XCTAssertEqual(sut.arrayData.count, 1)
+        sut.fetchData(image: "perro")
+        XCTAssertEqual(sut.arrayData.count, 7)
     }
     
     func test_when_response_is_success_but_null() {
@@ -40,6 +41,7 @@ class DetailViewModelTest: XCTestCase {
         dataStub.dogsData = DogModel(message: [],
                                      status: "success")
         sut = DetailViewModel(serviceDS: dataStub)
+        sut.fetchData(image: "perro")
         XCTAssertEqual(sut.arrayData.count, 0)
     }
 }
