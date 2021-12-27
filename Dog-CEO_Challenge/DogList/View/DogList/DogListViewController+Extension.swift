@@ -24,7 +24,9 @@ extension DogListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        #if DEBUG
         print("cantidad items \(viewModel.arrayData.count)")
+        #endif
         return viewModel.arrayData.count 
     }
 

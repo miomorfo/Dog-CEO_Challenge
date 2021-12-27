@@ -15,8 +15,6 @@
 		2297B80227750670003529DC /* DogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297B80127750670003529DC /* DogListViewModel.swift */; };
 		22A5FBC42774ADEA00FA3779 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FBC32774ADEA00FA3779 /* AppDelegate.swift */; };
 		22A5FBC62774ADEA00FA3779 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FBC52774ADEA00FA3779 /* SceneDelegate.swift */; };
-		22A5FBC82774ADEA00FA3779 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FBC72774ADEA00FA3779 /* ViewController.swift */; };
-		22A5FBCB2774ADEA00FA3779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A5FBC92774ADEA00FA3779 /* Main.storyboard */; };
 		22A5FBCD2774ADEC00FA3779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A5FBCC2774ADEC00FA3779 /* Assets.xcassets */; };
 		22A5FBD02774ADEC00FA3779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A5FBCE2774ADEC00FA3779 /* LaunchScreen.storyboard */; };
 		22A5FBDB2774ADEC00FA3779 /* Dog_CEO_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FBDA2774ADEC00FA3779 /* Dog_CEO_ChallengeTests.swift */; };
@@ -29,6 +27,11 @@
 		22A5FC082774D92F00FA3779 /* DogListViewControllerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FC072774D92F00FA3779 /* DogListViewControllerConstants.swift */; };
 		22A5FC0C2774DDB300FA3779 /* DogListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22A5FC0B2774DDB300FA3779 /* DogListTableViewCell.xib */; };
 		22A5FC0E2774DE4E00FA3779 /* DogListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A5FC0D2774DE4E00FA3779 /* DogListTableViewCell.swift */; };
+		22F71B4F2779F5F500D87797 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B4E2779F5F500D87797 /* DetailViewModel.swift */; };
+		22F71B512779F72500D87797 /* DetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F71B502779F72500D87797 /* DetailViewCell.xib */; };
+		22F71B532779F73C00D87797 /* DetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B522779F73C00D87797 /* DetailViewCell.swift */; };
+		22F71B552779F8F500D87797 /* DetailViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B542779F8F500D87797 /* DetailViewController+Extension.swift */; };
+		22F71B58277A03AA00D87797 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B57277A03AA00D87797 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +60,6 @@
 		22A5FBC02774ADEA00FA3779 /* Dog-CEO_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog-CEO_Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22A5FBC32774ADEA00FA3779 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22A5FBC52774ADEA00FA3779 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		22A5FBC72774ADEA00FA3779 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		22A5FBCA2774ADEA00FA3779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22A5FBCC2774ADEC00FA3779 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22A5FBCF2774ADEC00FA3779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22A5FBD12774ADEC00FA3779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +77,11 @@
 		22A5FC072774D92F00FA3779 /* DogListViewControllerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListViewControllerConstants.swift; sourceTree = "<group>"; };
 		22A5FC0B2774DDB300FA3779 /* DogListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogListTableViewCell.xib; sourceTree = "<group>"; };
 		22A5FC0D2774DE4E00FA3779 /* DogListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListTableViewCell.swift; sourceTree = "<group>"; };
+		22F71B4E2779F5F500D87797 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		22F71B502779F72500D87797 /* DetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewCell.xib; sourceTree = "<group>"; };
+		22F71B522779F73C00D87797 /* DetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
+		22F71B542779F8F500D87797 /* DetailViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+Extension.swift"; sourceTree = "<group>"; };
+		22F71B57277A03AA00D87797 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,14 +110,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F1D7DF42777B7DF0080E90E /* DetailView */ = {
+		0F1D7DF42777B7DF0080E90E /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				0F1D7DF9277965D80080E90E /* Constants */,
-				0F1D7DF52777B7FF0080E90E /* DetailViewController.swift */,
-				0F1D7DF72777B8290080E90E /* DetailViewController.xib */,
+				22F71B4D2779F59900D87797 /* ViewModel */,
+				22F71B4B2779E7AD00D87797 /* View */,
 			);
-			path = DetailView;
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		0F1D7DF9277965D80080E90E /* Constants */ = {
@@ -161,13 +166,12 @@
 		22A5FBC22774ADEA00FA3779 /* Dog-CEO_Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				22F71B56277A039100D87797 /* Utils */,
 				2297B7FA2774FF73003529DC /* Network */,
 				22A5FBFE2774CD2100FA3779 /* Constants */,
-				22A5FBF42774B47E00FA3779 /* Main */,
-				0F1D7DF42777B7DF0080E90E /* DetailView */,
+				22A5FBF42774B47E00FA3779 /* DogList */,
+				0F1D7DF42777B7DF0080E90E /* Detail */,
 				22A5FBF32774B46100FA3779 /* Base */,
-				22A5FBC72774ADEA00FA3779 /* ViewController.swift */,
-				22A5FBC92774ADEA00FA3779 /* Main.storyboard */,
 				22A5FBCC2774ADEC00FA3779 /* Assets.xcassets */,
 				22A5FBCE2774ADEC00FA3779 /* LaunchScreen.storyboard */,
 				22A5FBD12774ADEC00FA3779 /* Info.plist */,
@@ -202,14 +206,14 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		22A5FBF42774B47E00FA3779 /* Main */ = {
+		22A5FBF42774B47E00FA3779 /* DogList */ = {
 			isa = PBXGroup;
 			children = (
 				2297B8002775064D003529DC /* ViewModel */,
 				22A5FC012774D19700FA3779 /* Model */,
 				22A5FBF92774B8E200FA3779 /* View */,
 			);
-			path = Main;
+			path = DogList;
 			sourceTree = "<group>";
 		};
 		22A5FBF92774B8E200FA3779 /* View */ = {
@@ -263,6 +267,43 @@
 				22A5FC0D2774DE4E00FA3779 /* DogListTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		22F71B4B2779E7AD00D87797 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B4C2779ED7F00D87797 /* Cell */,
+				0F1D7DF52777B7FF0080E90E /* DetailViewController.swift */,
+				22F71B542779F8F500D87797 /* DetailViewController+Extension.swift */,
+				0F1D7DF72777B8290080E90E /* DetailViewController.xib */,
+				0F1D7DF9277965D80080E90E /* Constants */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22F71B4C2779ED7F00D87797 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B502779F72500D87797 /* DetailViewCell.xib */,
+				22F71B522779F73C00D87797 /* DetailViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		22F71B4D2779F59900D87797 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B4E2779F5F500D87797 /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		22F71B56277A039100D87797 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B57277A03AA00D87797 /* UIImageView+Extension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,7 +418,7 @@
 				22A5FBD02774ADEC00FA3779 /* LaunchScreen.storyboard in Resources */,
 				0F1D7DF82777B8290080E90E /* DetailViewController.xib in Resources */,
 				22A5FBCD2774ADEC00FA3779 /* Assets.xcassets in Resources */,
-				22A5FBCB2774ADEA00FA3779 /* Main.storyboard in Resources */,
+				22F71B512779F72500D87797 /* DetailViewCell.xib in Resources */,
 				22A5FC0C2774DDB300FA3779 /* DogListTableViewCell.xib in Resources */,
 				22A5FBFD2774B94E00FA3779 /* DogListViewController.xib in Resources */,
 			);
@@ -406,16 +447,19 @@
 			files = (
 				2297B7FF27750241003529DC /* ExternalService.swift in Sources */,
 				2297B80227750670003529DC /* DogListViewModel.swift in Sources */,
-				22A5FBC82774ADEA00FA3779 /* ViewController.swift in Sources */,
 				0F1D7DF62777B7FF0080E90E /* DetailViewController.swift in Sources */,
 				22A5FC082774D92F00FA3779 /* DogListViewControllerConstants.swift in Sources */,
 				22A5FBC42774ADEA00FA3779 /* AppDelegate.swift in Sources */,
 				22A5FC052774D7A700FA3779 /* DogListViewController+Extension.swift in Sources */,
 				0F1D7DFD277966080080E90E /* DetailViewConstants.swift in Sources */,
 				22A5FC0E2774DE4E00FA3779 /* DogListTableViewCell.swift in Sources */,
+				22F71B4F2779F5F500D87797 /* DetailViewModel.swift in Sources */,
+				22F71B532779F73C00D87797 /* DetailViewCell.swift in Sources */,
+				22F71B58277A03AA00D87797 /* UIImageView+Extension.swift in Sources */,
 				22A5FBC62774ADEA00FA3779 /* SceneDelegate.swift in Sources */,
 				22A5FBFB2774B8F600FA3779 /* DogListViewController.swift in Sources */,
 				22A5FC032774D22E00FA3779 /* DogModel.swift in Sources */,
+				22F71B552779F8F500D87797 /* DetailViewController+Extension.swift in Sources */,
 				22A5FC002774CD6600FA3779 /* Endpoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,14 +496,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		22A5FBC92774ADEA00FA3779 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22A5FBCA2774ADEA00FA3779 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		22A5FBCE2774ADEC00FA3779 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -592,7 +628,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Dog-CEO_Challenge/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -601,6 +638,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.goto.Dog-CEO-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -611,7 +649,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Dog-CEO_Challenge/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -620,6 +659,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.goto.Dog-CEO-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
