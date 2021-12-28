@@ -36,10 +36,19 @@ class DetailViewModelTest: XCTestCase {
         XCTAssertEqual(sut.arrayData.count, 7)
     }
     
-    func test_when_response_is_success_but_null() {
+    func test_when_response_is_success_but_void() {
         let dataStub = StubData()
         dataStub.dogsData = DogModel(message: [],
                                      status: "success")
+        sut = DetailViewModel(serviceDS: dataStub)
+        sut.fetchData(image: "perro")
+        XCTAssertEqual(sut.arrayData.count, 0)
+    }
+    
+    func test_when_response_is_success_but_null() {
+        let dataStub = StubData()
+        dataStub.dogsData = DogModel(message: nil,
+                                     status: nil)
         sut = DetailViewModel(serviceDS: dataStub)
         sut.fetchData(image: "perro")
         XCTAssertEqual(sut.arrayData.count, 0)

@@ -22,7 +22,6 @@ class DogListViewModelTest: XCTestCase {
     
     func test_when_response_is_success_most_be_not_null() {
         let dataStub = StubData()
-    
         dataStub.dogsData = DogModel(message: [
                                                 "affenpinscher",
                                                 "african",
@@ -37,12 +36,21 @@ class DogListViewModelTest: XCTestCase {
         XCTAssertEqual(sut.arrayData.count, 7)
     }
     
-    func test_when_response_is_success_most_be_null() {
+    func test_when_response_is_success_most_be_void() {
         let dataStub = StubData()
         dataStub.dogsData = DogModel(message: [],
                                      status: "success")
         sut = DogListViewModel(serviceDS: dataStub)
+        sut.fetchData()
         XCTAssertEqual(sut.arrayData.count, 0)
     }
-
+    
+    func test_when_response_is_success_most_be_null() {
+        let dataStub = StubData()
+        dataStub.dogsData = DogModel(message: nil,
+                                     status: nil)
+        sut = DogListViewModel(serviceDS: dataStub)
+        sut.fetchData()
+        XCTAssertEqual(sut.arrayData.count, 0)
+    }
 }
