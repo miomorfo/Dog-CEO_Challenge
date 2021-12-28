@@ -4,6 +4,6 @@ enum Enpoints {
     
     enum enpoints {
         static let list = "/breeds/list"
-        static let detail =  "/breed/{name}/images"
+        static let detail =  "/breed/%@/images"
     }
 }
