@@ -23,12 +23,33 @@ class DogListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
 
-    var viewModel = DogListViewModel()
+    var viewModel = DogListViewModel(serviceDS: ExternalService())
+    var viewModel2 = DogNamesViewModel(dogNames: [])
+    let dogUseCase = DogCeoServiceLocator().dogCEOUseCases
+    var datos: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCell()
-        bindData()
-        viewModel.fetchData()
+//        bindData()
+//        viewModel.fetchData()
+        dogUseCase.execute { [weak self] res, err in
+            guard let res = res else {
+                print("error")
+                return
+            }
+            self?.datos = res.message
+            self?.tableView.reloadData()
+        }
+        
     }
 }
+
+
+/*
+ crear presenter con el protocol
+ el protocol de la vista
+ los objetos para el datasource y el delegate
+ implementar la lógica del presenter
+ 
+ */

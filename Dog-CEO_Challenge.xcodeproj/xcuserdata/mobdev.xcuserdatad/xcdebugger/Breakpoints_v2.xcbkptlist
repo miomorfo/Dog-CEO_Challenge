@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2B93E123-AD8B-4E84-89B5-0FC47071CD1E"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dog-CEO_Challenge/Nentwork/ExternalService.swift"
@@ -23,40 +23,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B8F2EE13-42FA-4983-AF65-63E238F93757"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Dog-CEO_Challenge/Utils/UIImageView+Extension.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "8"
-            endingLineNumber = "8"
-            landmarkName = "load(url:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7B4266C3-8E4E-4D42-9CD0-E4125D3F0687"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Dog-CEO_ChallengeTests/DogList/ViewModel/DogListViewModelTest.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "test_when_response_is_success_most_be_not_null()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "A00E1E86-DCED-4921-8D7F-C303D81FB8B2"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Dog-CEO_Challenge/Network/ExternalService.swift"
@@ -71,65 +39,51 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5FADE76E-369E-4920-888C-652E30EE67A3"
+            uuid = "ACDE4404-A1D6-4196-BD09-97C5D0D09B92"
             shouldBeEnabled = "Yes"
+            nameForDebugger = "response"
             ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Dog-CEO_Challenge/DogDetail/ViewModel/DetailViewModel.swift"
+            continueAfterRunningActions = "Yes"
+            filePath = "Dog-CEO_Challenge/Network_UseCase/ExternalService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "fetchData(image:)"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "getData(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "5FADE76E-369E-4920-888C-652E30EE67A3 - cdb0ea61335c2262"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Dog_CEO_Challenge.DetailViewModel.fetchData(image: Swift.String) -&gt; ()"
-                  moduleName = "Dog-CEO_Challenge"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mobdev/Documents/mobdev/Dog-CEO_Challenge/Dog-CEO_Challenge/DogDetail/ViewModel/DetailViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  uuid = "5FADE76E-369E-4920-888C-652E30EE67A3 - 8d535c4a3be546a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Dog_CEO_Challenge.DogModel) -&gt; () in Dog_CEO_Challenge.DetailViewModel.fetchData(image: Swift.String) -&gt; ()"
-                  moduleName = "Dog-CEO_Challenge"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mobdev/Documents/mobdev/Dog-CEO_Challenge/Dog-CEO_Challenge/DogDetail/ViewModel/DetailViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.Log">
+                  <ActionContent
+                     message = "@response@"
+                     conveyanceType = "0">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "11E932D7-08FF-49B8-B8B1-FA95B71CC9BD"
+            uuid = "3914CDDE-824C-4BE9-B195-3726CE3EB65A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Dog-CEO_ChallengeTests/Stub/StubData.swift"
+            continueAfterRunningActions = "Yes"
+            filePath = "Dog-CEO_Challenge/DogList/View/DogList/DogListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "getDetail(name:completion:)"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "po res">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

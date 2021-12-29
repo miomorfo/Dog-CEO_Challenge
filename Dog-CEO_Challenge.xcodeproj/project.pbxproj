@@ -34,6 +34,17 @@
 		22F71B5C277A0B3100D87797 /* DogListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B5B277A0B3100D87797 /* DogListViewModelTest.swift */; };
 		22F71B5F277A0C3200D87797 /* StubData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B5E277A0C3200D87797 /* StubData.swift */; };
 		22F71B63277A4E0F00D87797 /* DetailViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B62277A4E0F00D87797 /* DetailViewModelTest.swift */; };
+		22F71B71277B50AB00D87797 /* DogCEOUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B70277B50AB00D87797 /* DogCEOUseCases.swift */; };
+		22F71B73277B75B900D87797 /* DogList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B72277B75B900D87797 /* DogList.swift */; };
+		22F71B75277B763900D87797 /* DogsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B74277B763900D87797 /* DogsRepository.swift */; };
+		22F71B77277B768600D87797 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B76277B768600D87797 /* ErrorModel.swift */; };
+		22F71B79277B799000D87797 /* DogsRestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B78277B799000D87797 /* DogsRestApi.swift */; };
+		22F71B7B277B79F400D87797 /* DogsAlamofireRestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B7A277B79F400D87797 /* DogsAlamofireRestApi.swift */; };
+		22F71B7D277B830F00D87797 /* DogNamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B7C277B830F00D87797 /* DogNamesViewModel.swift */; };
+		22F71B7F277BAEEB00D87797 /* DogsApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B7E277BAEEB00D87797 /* DogsApiRepository.swift */; };
+		22F71B83277C925700D87797 /* DogNamesViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B82277C925600D87797 /* DogNamesViewModelMapper.swift */; };
+		22F71B85277C947900D87797 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B84277C947900D87797 /* Mapper.swift */; };
+		22F71B87277C9C1E00D87797 /* DogCeoServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B86277C9C1E00D87797 /* DogCeoServiceLocator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +97,17 @@
 		22F71B5B277A0B3100D87797 /* DogListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListViewModelTest.swift; sourceTree = "<group>"; };
 		22F71B5E277A0C3200D87797 /* StubData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubData.swift; sourceTree = "<group>"; };
 		22F71B62277A4E0F00D87797 /* DetailViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTest.swift; sourceTree = "<group>"; };
+		22F71B70277B50AB00D87797 /* DogCEOUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCEOUseCases.swift; sourceTree = "<group>"; };
+		22F71B72277B75B900D87797 /* DogList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogList.swift; sourceTree = "<group>"; };
+		22F71B74277B763900D87797 /* DogsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRepository.swift; sourceTree = "<group>"; };
+		22F71B76277B768600D87797 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		22F71B78277B799000D87797 /* DogsRestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsRestApi.swift; sourceTree = "<group>"; };
+		22F71B7A277B79F400D87797 /* DogsAlamofireRestApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsAlamofireRestApi.swift; sourceTree = "<group>"; };
+		22F71B7C277B830F00D87797 /* DogNamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogNamesViewModel.swift; sourceTree = "<group>"; };
+		22F71B7E277BAEEB00D87797 /* DogsApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsApiRepository.swift; sourceTree = "<group>"; };
+		22F71B82277C925600D87797 /* DogNamesViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogNamesViewModelMapper.swift; sourceTree = "<group>"; };
+		22F71B84277C947900D87797 /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		22F71B86277C9C1E00D87797 /* DogCeoServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCeoServiceLocator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,12 +153,12 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		2297B7FA2774FF73003529DC /* Network */ = {
+		2297B7FA2774FF73003529DC /* Network_UseCase */ = {
 			isa = PBXGroup;
 			children = (
 				2297B7FE27750241003529DC /* ExternalService.swift */,
 			);
-			path = Network;
+			path = Network_UseCase;
 			sourceTree = "<group>";
 		};
 		2297B8002775064D003529DC /* ViewModel */ = {
@@ -170,8 +192,9 @@
 		22A5FBC22774ADEA00FA3779 /* Dog-CEO_Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				22F71B64277B4F8A00D87797 /* Feature1 */,
 				22F71B56277A039100D87797 /* Utils */,
-				2297B7FA2774FF73003529DC /* Network */,
+				2297B7FA2774FF73003529DC /* Network_UseCase */,
 				22A5FBFE2774CD2100FA3779 /* Constants */,
 				22A5FBF42774B47E00FA3779 /* DogList */,
 				0F1D7DF42777B7DF0080E90E /* DogDetail */,
@@ -308,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				22F71B57277A03AA00D87797 /* UIImageView+Extension.swift */,
+				22F71B84277C947900D87797 /* Mapper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -350,6 +374,111 @@
 				22F71B62277A4E0F00D87797 /* DetailViewModelTest.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		22F71B64277B4F8A00D87797 /* Feature1 */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B80277BB43F00D87797 /* DI */,
+				22F71B6D277B503900D87797 /* Network */,
+				22F71B68277B4FEC00D87797 /* Data */,
+				22F71B67277B4FC800D87797 /* Domain */,
+				22F71B65277B4FB700D87797 /* View */,
+			);
+			path = Feature1;
+			sourceTree = "<group>";
+		};
+		22F71B65277B4FB700D87797 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B81277BB45400D87797 /* Mapper */,
+				22F71B6B277B501100D87797 /* ViewModel */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22F71B67277B4FC800D87797 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B6C277B502700D87797 /* Use Case */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		22F71B68277B4FEC00D87797 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B6E277B505600D87797 /* Repository */,
+				22F71B69277B4FFF00D87797 /* Entity */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		22F71B69277B4FFF00D87797 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B6A277B500A00D87797 /* Model */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		22F71B6A277B500A00D87797 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B72277B75B900D87797 /* DogList.swift */,
+				22F71B76277B768600D87797 /* ErrorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22F71B6B277B501100D87797 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B7C277B830F00D87797 /* DogNamesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		22F71B6C277B502700D87797 /* Use Case */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B70277B50AB00D87797 /* DogCEOUseCases.swift */,
+			);
+			path = "Use Case";
+			sourceTree = "<group>";
+		};
+		22F71B6D277B503900D87797 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B78277B799000D87797 /* DogsRestApi.swift */,
+				22F71B7A277B79F400D87797 /* DogsAlamofireRestApi.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		22F71B6E277B505600D87797 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B74277B763900D87797 /* DogsRepository.swift */,
+				22F71B7E277BAEEB00D87797 /* DogsApiRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		22F71B80277BB43F00D87797 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B86277C9C1E00D87797 /* DogCeoServiceLocator.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		22F71B81277BB45400D87797 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B82277C925600D87797 /* DogNamesViewModelMapper.swift */,
+			);
+			path = Mapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,17 +625,28 @@
 				0F1D7DF62777B7FF0080E90E /* DetailViewController.swift in Sources */,
 				22A5FC082774D92F00FA3779 /* DogListViewControllerConstants.swift in Sources */,
 				22A5FBC42774ADEA00FA3779 /* AppDelegate.swift in Sources */,
+				22F71B79277B799000D87797 /* DogsRestApi.swift in Sources */,
+				22F71B85277C947900D87797 /* Mapper.swift in Sources */,
 				22A5FC052774D7A700FA3779 /* DogListViewController+Extension.swift in Sources */,
+				22F71B75277B763900D87797 /* DogsRepository.swift in Sources */,
 				0F1D7DFD277966080080E90E /* DetailViewConstants.swift in Sources */,
+				22F71B83277C925700D87797 /* DogNamesViewModelMapper.swift in Sources */,
 				22A5FC0E2774DE4E00FA3779 /* DogListTableViewCell.swift in Sources */,
 				22F71B4F2779F5F500D87797 /* DetailViewModel.swift in Sources */,
+				22F71B77277B768600D87797 /* ErrorModel.swift in Sources */,
 				22F71B532779F73C00D87797 /* DetailViewCell.swift in Sources */,
 				22F71B58277A03AA00D87797 /* UIImageView+Extension.swift in Sources */,
+				22F71B73277B75B900D87797 /* DogList.swift in Sources */,
+				22F71B87277C9C1E00D87797 /* DogCeoServiceLocator.swift in Sources */,
+				22F71B71277B50AB00D87797 /* DogCEOUseCases.swift in Sources */,
 				22A5FBC62774ADEA00FA3779 /* SceneDelegate.swift in Sources */,
 				22A5FBFB2774B8F600FA3779 /* DogListViewController.swift in Sources */,
 				22A5FC032774D22E00FA3779 /* DogModel.swift in Sources */,
 				22F71B552779F8F500D87797 /* DetailViewController+Extension.swift in Sources */,
+				22F71B7B277B79F400D87797 /* DogsAlamofireRestApi.swift in Sources */,
+				22F71B7F277BAEEB00D87797 /* DogsApiRepository.swift in Sources */,
 				22A5FC002774CD6600FA3779 /* Endpoints.swift in Sources */,
+				22F71B7D277B830F00D87797 /* DogNamesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
