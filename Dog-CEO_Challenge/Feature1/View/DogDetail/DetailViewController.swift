@@ -1,5 +1,5 @@
 import UIKit
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, DogDetailViewProtocol {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -29,7 +29,7 @@ class DetailViewController: UIViewController {
         PrepateTitle()
         prepareTableView()
         registerCell()
-        getImages(name: titleDogString)
+        getImagesFromProtocol(name: titleDogString)
     }
     
     func prepareTableView() {
@@ -41,7 +41,7 @@ class DetailViewController: UIViewController {
         tableView.register(UINib(nibName: "DetailViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
     }
     
-    private func getImages(name: String) {
+    private func getImagesFromProtocol(name: String) {
         presenter?.getImages(name: name)
     }
     private func PrepateTitle() {
@@ -51,4 +51,13 @@ class DetailViewController: UIViewController {
             title = titleDogString
         }
     }
+    
+    func showImages(images: DogImagesViewModel) {
+        viewModel = images
+        tableView.reloadData()
+    }
 }
+
+
+
+

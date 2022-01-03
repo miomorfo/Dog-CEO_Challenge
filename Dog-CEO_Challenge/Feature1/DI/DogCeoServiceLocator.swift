@@ -9,11 +9,11 @@ class DogCeoServiceLocator {
         return DogApiRepository(dogsRestApi: dogsRestApi)
     }
    
-    var dogCEOUseCases: DogCeoUseCases {
+    var dogCeoUseCases: DogCeoUseCases {
         return DogCeoUseCases(dogsRepository: dogsRepository)
     }
     
-    var dogCEODetailUseCases: DogCeoDetailUseCases {
+    var dogCeoDetailUseCases: DogCeoDetailUseCases {
         return DogCeoDetailUseCases(dogsRepository: dogsRepository)
     }
     

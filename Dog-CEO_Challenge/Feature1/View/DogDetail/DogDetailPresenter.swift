@@ -1,5 +1,5 @@
 class DogDetailPresenter: DogDetailPresenterProtocol {
-
+    
     private let dogCeoDetailUseCases: DogCeoDetailUseCases
     private let dogImagesViewModelMapper: Mapper<DogImagesViewModel, DogDetail>
     weak var dogDetailView: DogDetailViewProtocol?
@@ -20,8 +20,5 @@ class DogDetailPresenter: DogDetailPresenterProtocol {
             let images = self.dogImagesViewModelMapper.reverseMap(value: response)
             self.dogDetailView?.showImages(images: images)
         }
-        
     }
-    
-
 }

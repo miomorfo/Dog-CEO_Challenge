@@ -11,7 +11,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let serviceLocator =  DogCeoServiceLocator()
         let presenter =  DogListPresenter(
-            dogCEOUseCases: serviceLocator.dogCEOUseCases,
+            dogCEOUseCases: serviceLocator.dogCeoUseCases,
             dogNamesViewModelMapper: serviceLocator.dogNamesViewModelMapper
         )
         let dataSource = DogListDataSource()
@@ -24,8 +24,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationVC = UINavigationController(rootViewController: dogListViewController)
         window?.rootViewController = navigationVC
         window?.makeKeyAndVisible()
-        
-        //        guard let _ = (scene as? UIWindowScene) else { return }
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {}

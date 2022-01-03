@@ -10,13 +10,14 @@ extension DogListViewController: DogListViewProtocol {
         
         let serviceLocator =  DogCeoServiceLocator()
         let presenter =  DogDetailPresenter(
-            dogCeoDetailUseCases: serviceLocator.dogCEODetailUseCases,
+            dogCeoDetailUseCases: serviceLocator.dogCeoDetailUseCases,
             dogImagesViewModelMapper: serviceLocator.dogImagesViewModelMapper
         )
         let dataSource = DogDetailDataSource()
         let delegate = DogDetailDelegate()
         
         let detailViewController = DetailViewController(delegate: delegate, dataSource: dataSource, presenter: presenter)
+        presenter.dogDetailView = detailViewController
         detailViewController.titleDogString = name
         navigationController?.pushViewController(detailViewController, animated: true)
 
