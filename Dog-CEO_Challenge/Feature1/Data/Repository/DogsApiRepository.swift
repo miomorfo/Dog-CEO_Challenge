@@ -12,4 +12,10 @@ class DogApiRepository: DogsRepository {
             completion(response, error)
         }
     }
+    
+    func getDogDetail(name: String, completion: @escaping (DogDetail?, ErrorModel?) -> Void) {
+        dogsRestApi.getDogImages(name: name) { response, error in
+            completion(response, error)
+        }
+    }
 }

@@ -10,6 +10,8 @@
 		0F1D7DF62777B7FF0080E90E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D7DF52777B7FF0080E90E /* DetailViewController.swift */; };
 		0F1D7DF82777B8290080E90E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F1D7DF72777B8290080E90E /* DetailViewController.xib */; };
 		0F1D7DFD277966080080E90E /* DetailViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D7DFC277966080080E90E /* DetailViewConstants.swift */; };
+		2292F3CC27833F5300389B6C /* DogDetailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292F3CB27833F5300389B6C /* DogDetailDelegate.swift */; };
+		2292F3CE2783419500389B6C /* DogDetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292F3CD2783419500389B6C /* DogDetailDataSource.swift */; };
 		2297B7FD27750220003529DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2297B7FC27750220003529DC /* Alamofire */; };
 		2297B7FF27750241003529DC /* ExternalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297B7FE27750241003529DC /* ExternalService.swift */; };
 		2297B80227750670003529DC /* DogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297B80127750670003529DC /* DogListViewModel.swift */; };
@@ -50,6 +52,13 @@
 		22F71B8E277CF2A800D87797 /* DogListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B8D277CF2A800D87797 /* DogListViewProtocol.swift */; };
 		22F71B90277DDB8100D87797 /* DogListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B8F277DDB8100D87797 /* DogListPresenter.swift */; };
 		22F71B92277DE60800D87797 /* DogListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B91277DE60800D87797 /* DogListPresenterProtocol.swift */; };
+		22F71B95278320E600D87797 /* DogCeoDetailUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B94278320E500D87797 /* DogCeoDetailUseCases.swift */; };
+		22F71B97278321F000D87797 /* DogDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B96278321F000D87797 /* DogDetail.swift */; };
+		22F71B992783257B00D87797 /* DogImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B982783257B00D87797 /* DogImagesViewModel.swift */; };
+		22F71B9C278326BC00D87797 /* DogImagesViewModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B9B278326BC00D87797 /* DogImagesViewModelMapper.swift */; };
+		22F71B9F278329AA00D87797 /* DogDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B9E278329A900D87797 /* DogDetailPresenterProtocol.swift */; };
+		22F71BA127832A5000D87797 /* DogDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71BA027832A5000D87797 /* DogDetailPresenter.swift */; };
+		22F71BA327832C5700D87797 /* DogDetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71BA227832C5700D87797 /* DogDetailViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +82,8 @@
 		0F1D7DF52777B7FF0080E90E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0F1D7DF72777B8290080E90E /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		0F1D7DFC277966080080E90E /* DetailViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewConstants.swift; sourceTree = "<group>"; };
+		2292F3CB27833F5300389B6C /* DogDetailDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailDelegate.swift; sourceTree = "<group>"; };
+		2292F3CD2783419500389B6C /* DogDetailDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailDataSource.swift; sourceTree = "<group>"; };
 		2297B7FE27750241003529DC /* ExternalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalService.swift; sourceTree = "<group>"; };
 		2297B80127750670003529DC /* DogListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListViewModel.swift; sourceTree = "<group>"; };
 		22A5FBC02774ADEA00FA3779 /* Dog-CEO_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog-CEO_Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +129,13 @@
 		22F71B8D277CF2A800D87797 /* DogListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListViewProtocol.swift; sourceTree = "<group>"; };
 		22F71B8F277DDB8100D87797 /* DogListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListPresenter.swift; sourceTree = "<group>"; };
 		22F71B91277DE60800D87797 /* DogListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListPresenterProtocol.swift; sourceTree = "<group>"; };
+		22F71B94278320E500D87797 /* DogCeoDetailUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCeoDetailUseCases.swift; sourceTree = "<group>"; };
+		22F71B96278321F000D87797 /* DogDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetail.swift; sourceTree = "<group>"; };
+		22F71B982783257B00D87797 /* DogImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImagesViewModel.swift; sourceTree = "<group>"; };
+		22F71B9B278326BC00D87797 /* DogImagesViewModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImagesViewModelMapper.swift; sourceTree = "<group>"; };
+		22F71B9E278329A900D87797 /* DogDetailPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailPresenterProtocol.swift; sourceTree = "<group>"; };
+		22F71BA027832A5000D87797 /* DogDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailPresenter.swift; sourceTree = "<group>"; };
+		22F71BA227832C5700D87797 /* DogDetailViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				22F71B4D2779F59900D87797 /* ViewModel */,
-				22F71B4B2779E7AD00D87797 /* View */,
 			);
 			path = DogDetail;
 			sourceTree = "<group>";
@@ -303,18 +320,6 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		22F71B4B2779E7AD00D87797 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				22F71B4C2779ED7F00D87797 /* Cell */,
-				0F1D7DF52777B7FF0080E90E /* DetailViewController.swift */,
-				22F71B542779F8F500D87797 /* DetailViewController+Extension.swift */,
-				0F1D7DF72777B8290080E90E /* DetailViewController.xib */,
-				0F1D7DF9277965D80080E90E /* Constants */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		22F71B4C2779ED7F00D87797 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +401,7 @@
 		22F71B65277B4FB700D87797 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				22F71B9A278325F700D87797 /* DogDetail */,
 				22F71B88277CEB0F00D87797 /* DogList */,
 				22F71B81277BB45400D87797 /* Mapper */,
 				22F71B6B277B501100D87797 /* ViewModel */,
@@ -433,6 +439,7 @@
 			children = (
 				22F71B72277B75B900D87797 /* DogList.swift */,
 				22F71B76277B768600D87797 /* ErrorModel.swift */,
+				22F71B96278321F000D87797 /* DogDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -441,6 +448,7 @@
 			isa = PBXGroup;
 			children = (
 				22F71B7C277B830F00D87797 /* DogNamesViewModel.swift */,
+				22F71B982783257B00D87797 /* DogImagesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -449,6 +457,7 @@
 			isa = PBXGroup;
 			children = (
 				22F71B70277B50AB00D87797 /* DogCeoUseCases.swift */,
+				22F71B94278320E500D87797 /* DogCeoDetailUseCases.swift */,
 			);
 			path = "Use Case";
 			sourceTree = "<group>";
@@ -483,6 +492,7 @@
 			isa = PBXGroup;
 			children = (
 				22F71B82277C925600D87797 /* DogNamesViewModelMapper.swift */,
+				22F71B9B278326BC00D87797 /* DogImagesViewModelMapper.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -508,6 +518,31 @@
 			isa = PBXGroup;
 			children = (
 				22A5FBFC2774B94E00FA3779 /* DogListViewController.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22F71B9A278325F700D87797 /* DogDetail */ = {
+			isa = PBXGroup;
+			children = (
+				22F71B9D2783285700D87797 /* Resources */,
+				0F1D7DF9277965D80080E90E /* Constants */,
+				22F71B4C2779ED7F00D87797 /* Cell */,
+				0F1D7DF52777B7FF0080E90E /* DetailViewController.swift */,
+				22F71B542779F8F500D87797 /* DetailViewController+Extension.swift */,
+				22F71B9E278329A900D87797 /* DogDetailPresenterProtocol.swift */,
+				22F71BA027832A5000D87797 /* DogDetailPresenter.swift */,
+				22F71BA227832C5700D87797 /* DogDetailViewProtocol.swift */,
+				2292F3CB27833F5300389B6C /* DogDetailDelegate.swift */,
+				2292F3CD2783419500389B6C /* DogDetailDataSource.swift */,
+			);
+			path = DogDetail;
+			sourceTree = "<group>";
+		};
+		22F71B9D2783285700D87797 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0F1D7DF72777B8290080E90E /* DetailViewController.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -652,10 +687,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2297B7FF27750241003529DC /* ExternalService.swift in Sources */,
+				2292F3CE2783419500389B6C /* DogDetailDataSource.swift in Sources */,
 				2297B80227750670003529DC /* DogListViewModel.swift in Sources */,
+				22F71B9C278326BC00D87797 /* DogImagesViewModelMapper.swift in Sources */,
 				0F1D7DF62777B7FF0080E90E /* DetailViewController.swift in Sources */,
 				22A5FC082774D92F00FA3779 /* DogListViewControllerConstants.swift in Sources */,
 				22F71B92277DE60800D87797 /* DogListPresenterProtocol.swift in Sources */,
+				22F71B95278320E600D87797 /* DogCeoDetailUseCases.swift in Sources */,
 				22F71B8C277CEBE300D87797 /* DogListDelegate.swift in Sources */,
 				22A5FBC42774ADEA00FA3779 /* AppDelegate.swift in Sources */,
 				22F71B79277B799000D87797 /* DogsRestApi.swift in Sources */,
@@ -665,13 +703,18 @@
 				22F71B75277B763900D87797 /* DogsRepository.swift in Sources */,
 				0F1D7DFD277966080080E90E /* DetailViewConstants.swift in Sources */,
 				22F71B83277C925700D87797 /* DogNamesViewModelMapper.swift in Sources */,
+				22F71B97278321F000D87797 /* DogDetail.swift in Sources */,
 				22A5FC0E2774DE4E00FA3779 /* DogListTableViewCell.swift in Sources */,
+				22F71BA127832A5000D87797 /* DogDetailPresenter.swift in Sources */,
 				22F71B4F2779F5F500D87797 /* DetailViewModel.swift in Sources */,
 				22F71B77277B768600D87797 /* ErrorModel.swift in Sources */,
 				22F71B532779F73C00D87797 /* DetailViewCell.swift in Sources */,
+				22F71BA327832C5700D87797 /* DogDetailViewProtocol.swift in Sources */,
 				22F71B90277DDB8100D87797 /* DogListPresenter.swift in Sources */,
 				22F71B58277A03AA00D87797 /* UIImageView+Extension.swift in Sources */,
 				22F71B73277B75B900D87797 /* DogList.swift in Sources */,
+				2292F3CC27833F5300389B6C /* DogDetailDelegate.swift in Sources */,
+				22F71B9F278329AA00D87797 /* DogDetailPresenterProtocol.swift in Sources */,
 				22F71B87277C9C1E00D87797 /* DogCeoServiceLocator.swift in Sources */,
 				22F71B71277B50AB00D87797 /* DogCeoUseCases.swift in Sources */,
 				22F71B8A277CEBD500D87797 /* DogListDataSource.swift in Sources */,
@@ -679,6 +722,7 @@
 				22A5FBFB2774B8F600FA3779 /* DogListViewController.swift in Sources */,
 				22A5FC032774D22E00FA3779 /* DogModel.swift in Sources */,
 				22F71B552779F8F500D87797 /* DetailViewController+Extension.swift in Sources */,
+				22F71B992783257B00D87797 /* DogImagesViewModel.swift in Sources */,
 				22F71B7B277B79F400D87797 /* DogsAlamofireRestApi.swift in Sources */,
 				22F71B7F277BAEEB00D87797 /* DogsApiRepository.swift in Sources */,
 				22A5FC002774CD6600FA3779 /* Endpoints.swift in Sources */,

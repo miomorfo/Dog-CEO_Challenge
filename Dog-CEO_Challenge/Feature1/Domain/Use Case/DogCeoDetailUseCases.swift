@@ -1,4 +1,4 @@
-struct DogCeoUseCases {
+struct DogCeoDetailUseCases {
     
     private let dogsRepository: DogsRepository
     
@@ -6,14 +6,14 @@ struct DogCeoUseCases {
         self.dogsRepository = dogsRepository
     }
     
-    func execute(completion: @escaping (DogList?, ErrorModel?) -> Void) {
-        dogsRepository.getDogList { response, error in
+    func execute(name: String, completion: @escaping (DogDetail?, ErrorModel?) -> Void) {
+        dogsRepository.getDogDetail(name: name) { response, error in
             if let response = response {
                 completion(response, nil)
-            } else {
+            }else {
                 completion(nil, error)
             }
         }
-        
     }
+      
 }

@@ -6,19 +6,9 @@ class DogListDelegate: NSObject {
 
 extension DogListDelegate: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let objectDog = viewModel.arrayData[indexPath.row]
-//        let detailVC = DetailViewController()
-//        let navigationVC = UINavigationController(rootViewController: detailVC)
-//        detailVC.titleDogString = objectDog
-//        present(navigationVC, animated: true, completion: nil)
+        guard let viewController = viewController else { return }
+        let objectDogName = viewController.viewModel?.dogNames[indexPath.row]
+        viewController.goToDetailView(name: objectDogName ?? "")
+ 
     }
 }
-
-
-/*
- 
- 
- */
-
-
-

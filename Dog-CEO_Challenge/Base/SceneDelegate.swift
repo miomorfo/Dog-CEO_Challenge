@@ -21,7 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         let dogListViewController = DogListViewController(delegate: delegate, dataSource: dataSource, presenter: presenter)
         presenter.dogListView = dogListViewController
-        window?.rootViewController = dogListViewController
+        let navigationVC = UINavigationController(rootViewController: dogListViewController)
+        window?.rootViewController = navigationVC
         window?.makeKeyAndVisible()
         
         //        guard let _ = (scene as? UIWindowScene) else { return }

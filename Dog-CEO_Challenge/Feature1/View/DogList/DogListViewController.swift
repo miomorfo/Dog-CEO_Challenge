@@ -57,20 +57,6 @@ class DogListViewController: UIViewController {
     func getDogsFromPresenter() {
         presenter?.getDogs()
     }
-    
-//    private func bindData() {
-//        viewModel.reloadData = { [weak self] () in
-//            DispatchQueue.main.async {
-//                self?.tableView.reloadData()
-//            }
-//        }
-//    }
 }
 
 
-/*
- crear presenter con el protocol
- el protocol de la vista
- los objetos para el datasource y el delegate
- implementar la lógica del presenter
- */

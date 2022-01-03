@@ -11,4 +11,7 @@ struct DetailViewConstans {
         static let imageTrailing: CGFloat = 15
         static let imageBottom: CGFloat = 18
     }
+    struct GenericImage {
+        static let image = "https://www.dogtime.com/assets/uploads/2011/01/file_23020_dachshund-dog-breed-460x290.jpg"
+    }
 }
