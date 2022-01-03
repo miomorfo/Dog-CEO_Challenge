@@ -1,0 +1,4 @@
+
+protocol DogListPresenterProtocol {
+    func getDogs()
+}
