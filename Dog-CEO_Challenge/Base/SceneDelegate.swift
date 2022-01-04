@@ -8,20 +8,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let windowScene = (scene as? UIWindowScene) else {return}
-        
-        let serviceLocator =  DogCeoServiceLocator()
-        let presenter =  DogListPresenter(
-            dogCEOUseCases: serviceLocator.dogCeoUseCases,
-            dogNamesViewModelMapper: serviceLocator.dogNamesViewModelMapper
-        )
-        let dataSource = DogListDataSource()
-        let delegate = DogListDelegate()
-
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windowScene
-        let dogListViewController = DogListViewController(delegate: delegate, dataSource: dataSource, presenter: presenter)
-        presenter.dogListView = dogListViewController
-        let navigationVC = UINavigationController(rootViewController: dogListViewController)
+        let viewController = ViewControllerFactory.viewController(type: .list)
+        let navigationVC = UINavigationController(rootViewController: viewController)
         window?.rootViewController = navigationVC
         window?.makeKeyAndVisible()
     }

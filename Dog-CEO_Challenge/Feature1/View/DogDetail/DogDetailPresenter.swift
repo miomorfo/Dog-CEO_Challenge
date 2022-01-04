@@ -14,7 +14,6 @@ class DogDetailPresenter: DogDetailPresenterProtocol {
     func getImages(name: String) {
         dogCeoDetailUseCases.execute(name: name) { [weak self] response, error in
             guard let response = response, let self = self else {
-                print("error")
                 return
             }
             let images = self.dogImagesViewModelMapper.reverseMap(value: response)
