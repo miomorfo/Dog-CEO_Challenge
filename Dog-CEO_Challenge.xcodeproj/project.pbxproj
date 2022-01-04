@@ -28,6 +28,8 @@
 		22D1488A27847F9900F7D9C6 /* DogCeoViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D1488927847F9900F7D9C6 /* DogCeoViewFactory.swift */; };
 		22D1488C278496DF00F7D9C6 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D1488B278496DF00F7D9C6 /* ViewControllerFactory.swift */; };
 		22D1488E2784973800F7D9C6 /* ViewFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D1488D2784973800F7D9C6 /* ViewFactoryType.swift */; };
+		22D148912784CBA000F7D9C6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D148902784CBA000F7D9C6 /* Coordinator.swift */; };
+		22D148932784CC0700F7D9C6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D148922784CC0700F7D9C6 /* MainCoordinator.swift */; };
 		22F71B512779F72500D87797 /* DetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F71B502779F72500D87797 /* DetailViewCell.xib */; };
 		22F71B532779F73C00D87797 /* DetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B522779F73C00D87797 /* DetailViewCell.swift */; };
 		22F71B58277A03AA00D87797 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B57277A03AA00D87797 /* UIImageView+Extension.swift */; };
@@ -103,6 +105,8 @@
 		22D1488927847F9900F7D9C6 /* DogCeoViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCeoViewFactory.swift; sourceTree = "<group>"; };
 		22D1488B278496DF00F7D9C6 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		22D1488D2784973800F7D9C6 /* ViewFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactoryType.swift; sourceTree = "<group>"; };
+		22D148902784CBA000F7D9C6 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		22D148922784CC0700F7D9C6 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		22F71B502779F72500D87797 /* DetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewCell.xib; sourceTree = "<group>"; };
 		22F71B522779F73C00D87797 /* DetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
 		22F71B57277A03AA00D87797 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 		22A5FBC22774ADEA00FA3779 /* Dog-CEO_Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				22D1488F2784CB8F00F7D9C6 /* Coordinator */,
 				22D148872784793500F7D9C6 /* Core */,
 				22A5FBFE2774CD2100FA3779 /* Constants */,
 				22F71B56277A039100D87797 /* Utils */,
@@ -273,6 +278,15 @@
 				22D1488D2784973800F7D9C6 /* ViewFactoryType.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		22D1488F2784CB8F00F7D9C6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				22D148902784CBA000F7D9C6 /* Coordinator.swift */,
+				22D148922784CC0700F7D9C6 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		22F71B4C2779ED7F00D87797 /* Cell */ = {
@@ -664,8 +678,10 @@
 				22F71B87277C9C1E00D87797 /* DogCeoServiceLocator.swift in Sources */,
 				22F71B71277B50AB00D87797 /* DogCeoUseCases.swift in Sources */,
 				22F71B8A277CEBD500D87797 /* DogListDataSource.swift in Sources */,
+				22D148912784CBA000F7D9C6 /* Coordinator.swift in Sources */,
 				22A5FBC62774ADEA00FA3779 /* SceneDelegate.swift in Sources */,
 				22A5FBFB2774B8F600FA3779 /* DogListViewController.swift in Sources */,
+				22D148932784CC0700F7D9C6 /* MainCoordinator.swift in Sources */,
 				22F71B992783257B00D87797 /* DogImagesViewModel.swift in Sources */,
 				22F71B7B277B79F400D87797 /* DogsAlamofireRestApi.swift in Sources */,
 				22F71B7F277BAEEB00D87797 /* DogsApiRepository.swift in Sources */,

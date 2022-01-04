@@ -8,7 +8,8 @@ extension DogListDelegate: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let viewController = viewController else { return }
         let objectDogName = viewController.viewModel?.dogNames[indexPath.row]
-        viewController.goToDetailView(name: objectDogName ?? "")
+//        viewController.goToDetailView(name: objectDogName ?? "")
+        viewController.coordinator?.goToDetailView(name: objectDogName ?? "")
  
     }
 }

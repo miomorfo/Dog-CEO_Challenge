@@ -2,6 +2,8 @@ import UIKit
 
 class DogListViewController: UIViewController {
     
+    var coordinator: MainCoordinator?
+    
     @IBOutlet weak var activity: UIActivityIndicatorView!
     @IBOutlet private weak var titleTop: NSLayoutConstraint! {
         didSet {
@@ -43,6 +45,7 @@ class DogListViewController: UIViewController {
         registerCell()
         prepareTableView()
         getDogsFromPresenter()
+        title = "Dog Ceo"
     }
     
     private func prepareTableView() {
