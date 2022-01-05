@@ -5,8 +5,8 @@ extension DogListViewController: DogListViewProtocol {
         viewModel = dogs
         tableView.reloadData()
     }
-    
-    func goToDetailView(name: String) {
+//
+//    func goToDetailView(name: String) {
         
 //        let serviceLocator =  DogCeoServiceLocator()
 //        let presenter =  DogDetailPresenter(
@@ -23,9 +23,9 @@ extension DogListViewController: DogListViewProtocol {
 //        navigationController?.pushViewController(detailViewController, animated: true)
         
        
-        let viewController = ViewControllerFactory.viewController(type: .detail) as! DetailViewController
-        viewController.titleDogString = name
-        navigationController?.pushViewController(viewController, animated: true)
-
-    }
+//        let viewController = ViewControllerFactory.viewController(type: .detail) as! DetailViewController
+//        viewController.titleDogString = name
+//        navigationController?.pushViewController(viewController, animated: true)
+//
+//    }
 }

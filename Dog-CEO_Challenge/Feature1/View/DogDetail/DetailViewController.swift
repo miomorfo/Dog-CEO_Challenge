@@ -1,6 +1,7 @@
 import UIKit
 class DetailViewController: UIViewController, DogDetailViewProtocol {
     
+    var coordinator: MainCoordinator?
     @IBOutlet weak var tableView: UITableView!
     
     var titleDogString: String = DetailViewConstans.empty

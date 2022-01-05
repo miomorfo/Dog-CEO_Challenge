@@ -5,5 +5,6 @@ class DogDetailDelegate: NSObject {
 
 extension DogDetailDelegate: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewController?.coordinator?.goToinfoView()
     }
 }

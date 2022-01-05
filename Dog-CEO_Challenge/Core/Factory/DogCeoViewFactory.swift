@@ -43,12 +43,24 @@ class DogCeoViewFactory {
         return viewController
     }
     
+    var dogInfo: DogInfoViewController {
+        let viewController = DogInfoViewController(
+            presenter: DogInfoPresenter(),
+            delegate: DogInfoDelegate(),
+            dataSource : DogInfoDataSource()
+        )
+        
+        return viewController
+    }
+    
     func viewController(type: ViewDogType) -> UIViewController {
         switch type {
         case .list:
             return dogList
         case .detail:
             return dogDetail
+        case .info:
+            return dogInfo
         }
     }
 }
