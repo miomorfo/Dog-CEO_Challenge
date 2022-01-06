@@ -10,7 +10,7 @@ class DogImageCell: UITableViewCell {
     
     func prepare() {
         prepareImage()
-//        loadUrlToImage()
+        loadUrlToImage()
     }
     
     func loadUrlToImage() {
@@ -21,11 +21,12 @@ class DogImageCell: UITableViewCell {
     private func prepareImage() {
         contentView.addAutoLayout(subview: imageViewDog)
         imageViewDog.image = imagePerro
-        imageViewDog.translatesAutoresizingMaskIntoConstraints = false
+//        imageViewDog.translatesAutoresizingMaskIntoConstraints = false
         
 //        imageViewDog.contentMode = .scaleAspectFill
         imageViewDog.contentMode = .scaleAspectFit
         imageViewDog.clipsToBounds = true
+        imageViewDog.backgroundColor = .blue
 
         NSLayoutConstraint.activate([
             imageViewDog.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0),

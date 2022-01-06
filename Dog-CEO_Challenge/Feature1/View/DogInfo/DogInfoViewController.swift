@@ -49,9 +49,9 @@ class DogInfoViewController: UIViewController {
     func preapareTableView() {
         tableView.dataSource = dataSource
         tableView.delegate = delegate
-        //        tableView.translatesAutoresizingMaskIntoConstraints = false
+
         view.addAutoLayout(subview: tableView)
-        //TODO: averiguar como implementan "Pin"
+ 
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: .zero),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: .zero),
@@ -59,8 +59,8 @@ class DogInfoViewController: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: .zero)
         ])
         tableView.separatorStyle = .none
-        tableView.estimatedRowHeight = UITableView.automaticDimension
-        tableView.rowHeight = UITableView.automaticDimension
+//        tableView.estimatedRowHeight = UITableView.automaticDimension
+//        tableView.rowHeight = UITableView.automaticDimension
         tableView.showsVerticalScrollIndicator = false
     }
     

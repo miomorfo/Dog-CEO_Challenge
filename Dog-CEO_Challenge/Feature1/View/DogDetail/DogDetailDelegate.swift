@@ -5,7 +5,10 @@ class DogDetailDelegate: NSObject {
 
 extension DogDetailDelegate: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let name = viewController?.setData() ?? "Error nombre"
-        viewController?.coordinator?.goToinfoView(name: name)
+        guard let viewController = viewController else { return }
+        let name = viewController.setData()
+        let url = viewController.viewModel?.dogImages[indexPath.row] ?? ""
+        
+        viewController.coordinator?.goToinfoView(name: name, url: url)
     }
 }

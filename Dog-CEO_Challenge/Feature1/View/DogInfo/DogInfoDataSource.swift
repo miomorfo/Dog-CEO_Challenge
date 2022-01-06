@@ -33,6 +33,7 @@ extension DogInfoDataSource: UITableViewDataSource {
     
     private func prepareButtonCell(_ tableView: UITableView, indexPath: IndexPath) -> UITableViewCell  {
         let cell: DogButtonCell = tableView.dequeueReusableCell(withIdentifier: "CustomButtonCell") as! DogButtonCell
+        cell.delegate = viewController
         cell.prepare()
         return cell
     }
