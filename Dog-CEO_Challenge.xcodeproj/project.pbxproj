@@ -10,6 +10,8 @@
 		0F1D7DF62777B7FF0080E90E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D7DF52777B7FF0080E90E /* DetailViewController.swift */; };
 		0F1D7DF82777B8290080E90E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F1D7DF72777B8290080E90E /* DetailViewController.xib */; };
 		0F1D7DFD277966080080E90E /* DetailViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D7DFC277966080080E90E /* DetailViewConstants.swift */; };
+		0F9FFCBF2786617C007C2EDD /* DogDescriptionCellConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9FFCBE2786617C007C2EDD /* DogDescriptionCellConstants.swift */; };
+		0F9FFCC2278664AD007C2EDD /* DogImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9FFCC1278664AD007C2EDD /* DogImageCell.swift */; };
 		2292F3CC27833F5300389B6C /* DogDetailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292F3CB27833F5300389B6C /* DogDetailDelegate.swift */; };
 		2292F3CE2783419500389B6C /* DogDetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292F3CD2783419500389B6C /* DogDetailDataSource.swift */; };
 		2297B7FD27750220003529DC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2297B7FC27750220003529DC /* Alamofire */; };
@@ -93,6 +95,8 @@
 		0F1D7DF52777B7FF0080E90E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		0F1D7DF72777B8290080E90E /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		0F1D7DFC277966080080E90E /* DetailViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewConstants.swift; sourceTree = "<group>"; };
+		0F9FFCBE2786617C007C2EDD /* DogDescriptionCellConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDescriptionCellConstants.swift; sourceTree = "<group>"; };
+		0F9FFCC1278664AD007C2EDD /* DogImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageCell.swift; sourceTree = "<group>"; };
 		2292F3CB27833F5300389B6C /* DogDetailDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailDelegate.swift; sourceTree = "<group>"; };
 		2292F3CD2783419500389B6C /* DogDetailDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailDataSource.swift; sourceTree = "<group>"; };
 		22A5FBC02774ADEA00FA3779 /* Dog-CEO_Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dog-CEO_Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,6 +196,14 @@
 				0F1D7DFC277966080080E90E /* DetailViewConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		0F9FFCC0278661D2007C2EDD /* ImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				0F9FFCC1278664AD007C2EDD /* DogImageCell.swift */,
+			);
+			path = ImageCell;
 			sourceTree = "<group>";
 		};
 		22A5FBB72774ADEA00FA3779 = {
@@ -329,6 +341,7 @@
 		22D148972785E54000F7D9C6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				0F9FFCC0278661D2007C2EDD /* ImageCell */,
 				22D148A827863C0100F7D9C6 /* NameCell */,
 				22D148AB27863F7700F7D9C6 /* DescriptionCell */,
 			);
@@ -348,6 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				22D148AC27863F9900F7D9C6 /* DogDescriptionCell.swift */,
+				0F9FFCBE2786617C007C2EDD /* DogDescriptionCellConstants.swift */,
 			);
 			path = DescriptionCell;
 			sourceTree = "<group>";
@@ -711,6 +725,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F9FFCC2278664AD007C2EDD /* DogImageCell.swift in Sources */,
 				2292F3CE2783419500389B6C /* DogDetailDataSource.swift in Sources */,
 				22F71B9C278326BC00D87797 /* DogImagesViewModelMapper.swift in Sources */,
 				0F1D7DF62777B7FF0080E90E /* DetailViewController.swift in Sources */,
@@ -729,6 +744,7 @@
 				22D148A52785EF9A00F7D9C6 /* UIView+Extension.swift in Sources */,
 				22F71B75277B763900D87797 /* DogsRepository.swift in Sources */,
 				0F1D7DFD277966080080E90E /* DetailViewConstants.swift in Sources */,
+				0F9FFCBF2786617C007C2EDD /* DogDescriptionCellConstants.swift in Sources */,
 				22F71B83277C925700D87797 /* DogNamesViewModelMapper.swift in Sources */,
 				22D148A727861D5300F7D9C6 /* DogNameCell.swift in Sources */,
 				22F71B97278321F000D87797 /* DogDetail.swift in Sources */,

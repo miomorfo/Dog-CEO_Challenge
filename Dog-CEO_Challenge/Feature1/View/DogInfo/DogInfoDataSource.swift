@@ -17,6 +17,12 @@ extension DogInfoDataSource: UITableViewDataSource {
         return cell
     }
     
+    private func prepareDescriptionCell(_ tableView: UITableView, indexPath: IndexPath) -> UITableViewCell  {
+        let cell: DogDescriptionCell = tableView.dequeueReusableCell(withIdentifier: "CustomDescriptionCell") as! DogDescriptionCell
+        cell.prepare()
+        return cell
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         var cell =  UITableViewCell()
@@ -29,7 +35,7 @@ extension DogInfoDataSource: UITableViewDataSource {
         case .picture:
             cell = UITableViewCell()
         case .info:
-            cell = UITableViewCell()
+            cell = prepareDescriptionCell(tableView, indexPath: indexPath)
         }
         
         cell.selectionStyle = .none

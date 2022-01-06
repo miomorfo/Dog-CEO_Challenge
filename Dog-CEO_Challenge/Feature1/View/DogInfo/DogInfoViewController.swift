@@ -36,6 +36,7 @@ class DogInfoViewController: UIViewController {
     
     func registerCells() {
         tableView.register(DogNameCell.self, forCellReuseIdentifier: "CustomTitleCell")
+        tableView.register(DogDescriptionCell.self, forCellReuseIdentifier: "CustomDescriptionCell")
     }
     
     func preapareTableView() {
