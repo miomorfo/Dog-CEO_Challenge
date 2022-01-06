@@ -5,8 +5,12 @@ class DogInfoViewController: UIViewController {
     private var presenter: DogInfoPresenterProtocol?
     private var delegate: DogInfoDelegate?
     private var dataSource: DogInfoDataSource?
+    var coordinator: MainCoordinator?
     
     var tableView = UITableView(frame: .zero)
+    
+    var dogName: String = ""
+    var dogUrl: String = ""
     
     convenience init(
         presenter: DogInfoPresenterProtocol,
@@ -29,7 +33,8 @@ class DogInfoViewController: UIViewController {
     
     func prepare() {
         //TODO: move to constants
-        title = "nueva vista de detalle"
+        title = "Vista Detalle"
+//        title = dogName
         preapareTableView()
         registerCells()
     }
@@ -37,12 +42,14 @@ class DogInfoViewController: UIViewController {
     func registerCells() {
         tableView.register(DogNameCell.self, forCellReuseIdentifier: "CustomTitleCell")
         tableView.register(DogDescriptionCell.self, forCellReuseIdentifier: "CustomDescriptionCell")
+        tableView.register(DogImageCell.self, forCellReuseIdentifier: "CustomImageCell")
+        tableView.register(DogButtonCell.self, forCellReuseIdentifier: "CustomButtonCell")
     }
     
     func preapareTableView() {
         tableView.dataSource = dataSource
         tableView.delegate = delegate
-//        tableView.translatesAutoresizingMaskIntoConstraints = false
+        //        tableView.translatesAutoresizingMaskIntoConstraints = false
         view.addAutoLayout(subview: tableView)
         //TODO: averiguar como implementan "Pin"
         NSLayoutConstraint.activate([
@@ -56,6 +63,20 @@ class DogInfoViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.showsVerticalScrollIndicator = false
     }
+    
+}
+
+extension DogInfoViewController: DogButtonCellDelegate {
+    func pressButton() {
+        
+        let alerView = UIAlertController(title: "Alerta", message: "EL perro alerta", preferredStyle: UIAlertController.Style.alert )
+        
+        alerView.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil ))
+        
+        self.present(alerView, animated: true, completion: nil)
+    }
+    
+    
 }
 
 

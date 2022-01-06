@@ -3,9 +3,9 @@ import UIKit
 class DogNameCell: UITableViewCell {
     
     static let identifier = DogNameCellConstants.identifier
-    private var title = UILabel()
-    
-    
+     var title = UILabel()
+
+        
     func prepare() {
         prepareTitle()
     }
@@ -14,13 +14,13 @@ class DogNameCell: UITableViewCell {
         contentView.addAutoLayout(subview: title)
         
         NSLayoutConstraint.activate([
-            title.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
-            title.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
-            title.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            title.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10)
+            title.topAnchor.constraint(equalTo: contentView.topAnchor, constant: DogNameCellConstants.CellMargins.top),
+            title.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: DogNameCellConstants.CellMargins.bottom),
+            title.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: DogNameCellConstants.CellMargins.leading),
+            title.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: DogNameCellConstants.CellMargins.trailing)
         ])
-        //TODO: move to constans
-        title.text = DogNameCellConstants.Texts.title
+        
+//        title.text = DogNameCellConstants.Texts.title
         title.textAlignment = .center
     }
 }

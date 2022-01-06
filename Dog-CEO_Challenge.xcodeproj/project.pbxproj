@@ -43,6 +43,8 @@
 		22D148A727861D5300F7D9C6 /* DogNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D148A627861D5300F7D9C6 /* DogNameCell.swift */; };
 		22D148AA27863C1D00F7D9C6 /* DogNameCellConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D148A927863C1D00F7D9C6 /* DogNameCellConstants.swift */; };
 		22D148AD27863F9900F7D9C6 /* DogDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D148AC27863F9900F7D9C6 /* DogDescriptionCell.swift */; };
+		22D148B027872F4800F7D9C6 /* DogButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D148AF27872F4800F7D9C6 /* DogButtonCell.swift */; };
+		22D148B2278742E500F7D9C6 /* DogButtonCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D148B1278742E500F7D9C6 /* DogButtonCellDelegate.swift */; };
 		22F71B512779F72500D87797 /* DetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F71B502779F72500D87797 /* DetailViewCell.xib */; };
 		22F71B532779F73C00D87797 /* DetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B522779F73C00D87797 /* DetailViewCell.swift */; };
 		22F71B58277A03AA00D87797 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F71B57277A03AA00D87797 /* UIImageView+Extension.swift */; };
@@ -133,6 +135,8 @@
 		22D148A627861D5300F7D9C6 /* DogNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogNameCell.swift; sourceTree = "<group>"; };
 		22D148A927863C1D00F7D9C6 /* DogNameCellConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogNameCellConstants.swift; sourceTree = "<group>"; };
 		22D148AC27863F9900F7D9C6 /* DogDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDescriptionCell.swift; sourceTree = "<group>"; };
+		22D148AF27872F4800F7D9C6 /* DogButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogButtonCell.swift; sourceTree = "<group>"; };
+		22D148B1278742E500F7D9C6 /* DogButtonCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogButtonCellDelegate.swift; sourceTree = "<group>"; };
 		22F71B502779F72500D87797 /* DetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewCell.xib; sourceTree = "<group>"; };
 		22F71B522779F73C00D87797 /* DetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
 		22F71B57277A03AA00D87797 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -341,9 +345,10 @@
 		22D148972785E54000F7D9C6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				0F9FFCC0278661D2007C2EDD /* ImageCell */,
 				22D148A827863C0100F7D9C6 /* NameCell */,
 				22D148AB27863F7700F7D9C6 /* DescriptionCell */,
+				0F9FFCC0278661D2007C2EDD /* ImageCell */,
+				22D148AE27872F2900F7D9C6 /* ButtomCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -364,6 +369,15 @@
 				0F9FFCBE2786617C007C2EDD /* DogDescriptionCellConstants.swift */,
 			);
 			path = DescriptionCell;
+			sourceTree = "<group>";
+		};
+		22D148AE27872F2900F7D9C6 /* ButtomCell */ = {
+			isa = PBXGroup;
+			children = (
+				22D148AF27872F4800F7D9C6 /* DogButtonCell.swift */,
+				22D148B1278742E500F7D9C6 /* DogButtonCellDelegate.swift */,
+			);
+			path = ButtomCell;
 			sourceTree = "<group>";
 		};
 		22F71B4C2779ED7F00D87797 /* Cell */ = {
@@ -742,6 +756,7 @@
 				22A5FC052774D7A700FA3779 /* DogListViewController+Extension.swift in Sources */,
 				22F71B8E277CF2A800D87797 /* DogListViewProtocol.swift in Sources */,
 				22D148A52785EF9A00F7D9C6 /* UIView+Extension.swift in Sources */,
+				22D148B027872F4800F7D9C6 /* DogButtonCell.swift in Sources */,
 				22F71B75277B763900D87797 /* DogsRepository.swift in Sources */,
 				0F1D7DFD277966080080E90E /* DetailViewConstants.swift in Sources */,
 				0F9FFCBF2786617C007C2EDD /* DogDescriptionCellConstants.swift in Sources */,
@@ -755,6 +770,7 @@
 				22F71B532779F73C00D87797 /* DetailViewCell.swift in Sources */,
 				22D1488A27847F9900F7D9C6 /* DogCeoViewFactory.swift in Sources */,
 				22F71BA327832C5700D87797 /* DogDetailViewProtocol.swift in Sources */,
+				22D148B2278742E500F7D9C6 /* DogButtonCellDelegate.swift in Sources */,
 				22F71B90277DDB8100D87797 /* DogListPresenter.swift in Sources */,
 				22D1489B2785E5BE00F7D9C6 /* DogInfoPresenterProtocol.swift in Sources */,
 				22F71B58277A03AA00D87797 /* UIImageView+Extension.swift in Sources */,

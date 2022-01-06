@@ -57,6 +57,10 @@ class DetailViewController: UIViewController, DogDetailViewProtocol {
         viewModel = images
         tableView.reloadData()
     }
+    
+    func setData() -> String {
+        return titleDogString
+    }
 }
 
 
