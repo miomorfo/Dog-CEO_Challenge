@@ -9,8 +9,8 @@ class DogInfoViewController: UIViewController {
     
     var tableView = UITableView(frame: .zero)
     
-    var dogName: String = ""
-    var dogUrl: String = ""
+    var dogName: String = DogInfoViewConstants.empty
+    var dogUrl: String = DogInfoViewConstants.empty
     
     convenience init(
         presenter: DogInfoPresenterProtocol,
@@ -32,8 +32,7 @@ class DogInfoViewController: UIViewController {
     }
     
     func prepare() {
-        //TODO: move to constants
-        title = "Vista Detalle"
+        title = DogInfoViewConstants.title
 //        title = dogName
         preapareTableView()
         registerCells()
@@ -59,8 +58,6 @@ class DogInfoViewController: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: .zero)
         ])
         tableView.separatorStyle = .none
-//        tableView.estimatedRowHeight = UITableView.automaticDimension
-//        tableView.rowHeight = UITableView.automaticDimension
         tableView.showsVerticalScrollIndicator = false
     }
     
@@ -69,9 +66,8 @@ class DogInfoViewController: UIViewController {
 extension DogInfoViewController: DogButtonCellDelegate {
     func pressButton() {
         
-        let alerView = UIAlertController(title: "Alerta", message: "EL perro alerta", preferredStyle: UIAlertController.Style.alert )
-        
-        alerView.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil ))
+        let alerView = UIAlertController(title: DogInfoViewConstants.AlertTexts.title, message: DogInfoViewConstants.AlertTexts.message, preferredStyle: UIAlertController.Style.alert )
+        alerView.addAction(UIAlertAction(title: DogInfoViewConstants.AlertTexts.actionOK, style: UIAlertAction.Style.default, handler: nil ))
         
         self.present(alerView, animated: true, completion: nil)
     }

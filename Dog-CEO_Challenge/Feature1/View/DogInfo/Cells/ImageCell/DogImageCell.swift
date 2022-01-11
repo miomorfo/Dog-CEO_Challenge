@@ -2,10 +2,10 @@ import UIKit
 
 class DogImageCell: UITableViewCell {
     
-    static let identifier =  "CustomImageCell"
-    var urlString: String = ""
+    static let identifier =  DogImageCellConstants.identifier
+    var urlString: String = DogImageCellConstants.empty
     private var imageViewDog = UIImageView(frame: .zero)
-    private let imagePerro = UIImage(named: "perrito.jpg")
+    private let imagePerro = UIImage(named: DogImageCellConstants.Texts.placeholder)
 
     
     func prepare() {
@@ -21,18 +21,16 @@ class DogImageCell: UITableViewCell {
     private func prepareImage() {
         contentView.addAutoLayout(subview: imageViewDog)
         imageViewDog.image = imagePerro
-//        imageViewDog.translatesAutoresizingMaskIntoConstraints = false
-        
 //        imageViewDog.contentMode = .scaleAspectFill
         imageViewDog.contentMode = .scaleAspectFit
         imageViewDog.clipsToBounds = true
         imageViewDog.backgroundColor = .blue
 
         NSLayoutConstraint.activate([
-            imageViewDog.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0),
-            imageViewDog.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 0),
-            imageViewDog.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
-            imageViewDog.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10)
+            imageViewDog.topAnchor.constraint(equalTo: contentView.topAnchor, constant: DogImageCellConstants.CellMargins.top),
+            imageViewDog.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: DogImageCellConstants.CellMargins.bottom),
+            imageViewDog.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: DogImageCellConstants.CellMargins.trailing),
+            imageViewDog.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: DogImageCellConstants.CellMargins.leading)
         ])
     }
 }

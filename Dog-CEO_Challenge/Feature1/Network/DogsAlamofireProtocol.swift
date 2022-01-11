@@ -1,0 +1,5 @@
+import Alamofire
+
+protocol DogsAlamofireProtocol {
+   
+}
