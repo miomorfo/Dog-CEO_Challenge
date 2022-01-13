@@ -44,7 +44,7 @@ extension DogInfoDataSource: UITableViewDataSource {
         
         var cell =  UITableViewCell()
         
-        let cellTypeForSection = cellTypes[indexPath.section]
+        let cellTypeForSection = cellTypes[indexPath.row]
         
         switch cellTypeForSection {
         case .title:
@@ -63,16 +63,12 @@ extension DogInfoDataSource: UITableViewDataSource {
         return cell
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return cellTypes.count
-    }
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return 1
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-        
+        return cellTypes.count
     }
-    
-    
-    
-    
+
 }

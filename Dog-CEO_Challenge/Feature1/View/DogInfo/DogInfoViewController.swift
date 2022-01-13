@@ -23,6 +23,7 @@ class DogInfoViewController: UIViewController {
         dataSource.viewController = self
         self.delegate = delegate
         self.dataSource = dataSource
+        self.presenter = presenter
     }
     
     override func viewDidLoad() {

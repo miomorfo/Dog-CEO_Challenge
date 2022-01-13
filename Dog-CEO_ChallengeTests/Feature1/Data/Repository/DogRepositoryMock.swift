@@ -2,8 +2,11 @@
 
 class DogRepositoryMock: DogsRepository {
     var success = false
+    var dogListCalled = false
+    var dogImagesCalled = false
     
     func getDogList(completion: @escaping (DogList?, ErrorModel?) -> Void) {
+        dogListCalled = true
         if success {
             completion(generateDogListModel(), nil)
         } else {
@@ -12,6 +15,7 @@ class DogRepositoryMock: DogsRepository {
     }
     
     func getDogDetail(name: String, completion: @escaping (DogDetail?, ErrorModel?) -> Void) {
+        dogImagesCalled = true
         if success {
             completion(generateDogDetail(), nil)
             

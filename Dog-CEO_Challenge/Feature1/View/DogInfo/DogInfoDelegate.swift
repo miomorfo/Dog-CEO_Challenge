@@ -7,22 +7,14 @@ class DogInfoDelegate: NSObject {
 
 extension DogInfoDelegate: UITableViewDelegate {
     
-    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //        switch cellTypes[indexPath.section] {
-    //        case .button:
-    //
-    //        case .title, .info, .picture, .spacer:
-    //
-    //        }
-    //    }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        switch cellTypes[indexPath.section] {
+        switch cellTypes[indexPath.row] {
         case .picture:
             return 200
         case .title, .info, .button, .spacer:
-            return self.tableView(tableView, estimatedHeightForRowAt: indexPath)
+            return UITableView.automaticDimension
+        
         }
     }
     

@@ -14,8 +14,13 @@ class DogImageCell: UITableViewCell {
     }
     
     func loadUrlToImage() {
-        let url = URL(string: urlString)
-        imageViewDog.load(url: url!)
+        if let url = URL(string: urlString) {
+            imageViewDog.load(url: url)
+        } else {
+            let url = URL(string: "https://images.dog.ceo/breeds/beagle/1271553739_Milo.jpg")
+            imageViewDog.load(url: url!)
+        }
+
     }
     
     private func prepareImage() {
