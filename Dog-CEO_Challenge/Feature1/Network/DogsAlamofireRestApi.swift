@@ -2,7 +2,6 @@ import Alamofire
 import Foundation
 
 class DogsAlamofireRestApi: DogsRestApi {
-    
     func getDogNames(completion: @escaping (DogList?, ErrorModel?) -> Void) {
         let url = Enpoints.urlBase + Enpoints.enpoints.list
         Alamofire.request(url).responseJSON { response in

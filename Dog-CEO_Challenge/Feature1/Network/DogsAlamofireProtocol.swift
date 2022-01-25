@@ -1,5 +1,0 @@
-import Alamofire
-
-protocol DogsAlamofireProtocol {
-   
-}
